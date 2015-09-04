@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<%- include head.ejs %>
+<body>
+
+	<div class="md-modal md-effect-1" id="modal-1">
+		<div class="md-content">
+			<h3>Login</h3>
+			<div>
+				<form id="login" action="/login" method="POST">
+					<input type="text" placeholder="Username or email" name="username" style="width:100%"/>
+					<input type="password" placeholder="Password" name="password" style="width:100%;"/>
+					<a href="#" class="md-trigger md-close" data-modal="modal-6">Forgot your password? <span style="color:#EC1717">Click here!</span></a>
+					<input class="md-close" type="submit" value="LOGIN" />
+					<p>Or login with:</p>
+
+					<div class="left-twitter">
+						<a href="/auth/twitter" >
+							<i class="fa fa-twitter fa-2x"></i><br/>
+							<span style="font-weight:400">Twitter</span>
+						</a>
+					</div>
+					<div class="right-facebook">
+						<a href="/auth/facebook" >
+							<i class="fa fa-facebook fa-2x"></i><br/>
+							<span style="font-weight:400">Facebook</span>
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="md-modal md-effect-1" id="modal-6">
+		<div class="md-content">
+			<h3>Retrieving password</h3>
+			<div>
+				<form id="forgot" action="/remember_me" method="POST">
+					<input name="username" type="text" placeholder="Username" />
+					<input class="md-close" type="submit" value="SEND PASSWORD" />
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="md-modal md-effect-1" id="modal-2">
+		<div class="md-content">
+			<h3>Register</h3>
+			<div>
+				<form id="register" action="/signup" method="POST" >
+
+					<input type="text" name="username" placeholder="Username" style="width:50%;">
+					<input type="password" name="password" placeholder="Password" style="width:50%;">
+					<input type="password" name="password2" placeholder="Repeat password" style="width:50%;">
+					<input class="md-close" type="submit" value="REGISTER">
+					<p>Or register with:</p>
+
+					<div class="left-twitter">
+						<a href="/auth/twitter" >
+							<i class="fa fa-twitter fa-2x"></i><br/>
+							<span style="font-weight:400">Twitter</span>
+						</a>
+					</div>
+					<div class="right-facebook">
+						<a href="/auth/facebook" >
+							<i class="fa fa-facebook fa-2x"></i><br/>
+							<span style="font-weight:400">Facebook</span>
+						</a>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<% if(locals.error){%>
+
+	<div class="md-modal md-effect-1 md-show" id="modal-4">
+		<div class="md-content">
+			<h3>Oops!! There is an error!</h3>
+			<div id="error">
+				<%=error%>
+			</div>
+			<button class="md-close close">Close me!</button>
+		</div>
+	</div>
+	<%}%>
+
+	<% if(locals.rememberme){%>
+
+	<div class="md-modal md-effect-1 md-show" id="modal-4">
+		<div class="md-content">
+			<h3>Remember me</h3>
+			<div id="error">
+				<%= rememberme %>
+			</div>
+			<button class="md-close close">Close me!</button>
+		</div>
+	</div>
+	<%}%>
+
+	<% if(locals.completeRegister){%>
+	<%- include modal/second_register.ejs %>
+	<%}%>
+
+	<% if(locals.email){%>
+	<div class="md-modal md-effect-1 md-show" id="modal-11">
+		<div class="md-content">
+			<h3>Oops!! There is an error!</h3>
+			<div id="error">
+				Email already exists
+			</div>
+			<button class="md-close close">Close me!</button>
+		</div>
+	</div>
+	<%}%>
+
+	<nav class="navbar">
+		<ul class="user_name">
+			<li><a href="#"><span>HOME</span></a></li>
+			<li><a href="#">ABOUT US</a></li>
+			<li><a href="#">HOW WORKS</a></li>
+			<li><a href="#">CONTACT</a></li>
+		</ul>
+
+
+
+		<ul class="social user_name">
+			<li><a id="login-btn" class="md-trigger" data-modal="modal-1" href="#">Login</a></li>
+			<li> | </li>
+			<li><a id="register-btn" class="md-trigger" data-modal="modal-2" href="#">Register </a></li>
+		</ul>
+
+	</nav>
+	<div class="callout callout-top clearfix">
+		<div class="grid">
+			<div class="col_7">
+				<h2>WEB UNDER CONSTRUCTION</h2><br />
+				<h5>A new way to take on <strong>#challenges</strong></h5><br />
+
+				<p class="beta">We're currently in beta. Get access:</p>
+
+				<form id="newsletter">
+					<input type="text" placeholder="Your email address"/>
+					<button type="button">SEND</button>			
+				</form>
+
+				<p>We hate SPAM, so rest assured that you'll receive only your invitation code</p>
+			</div>
+			<div class="col_5" style="margin-top:90px;">
+				<ul class="slideshow">
+					<li><img style="width:100px;display: block;margin-left: auto;margin-right: auto;border:3px solid #fff;border-radius:80px" src="https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11419054_884455571633823_1850677887_a.jpg" alt=""/>
+						<strong style="display:inline-block;margin:12px;">@adrianperezcas</strong><br />
+						<small>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</small>
+					</li>
+
+					<li><img style="width:100px;display: block;margin-left: auto;margin-right: auto;border:3px solid #fff;border-radius:80px" src="https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11419054_884455571633823_1850677887_a.jpg" alt=""/>
+						<strong style="display:inline-block;margin:12px;">@adrianperezcas</strong><br />
+						<small>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</small>
+					</li>
+
+					<li><img style="width:100px;display: block;margin-left: auto;margin-right: auto;border:3px solid #fff;border-radius:80px" src="https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11419054_884455571633823_1850677887_a.jpg" alt=""/>
+						<strong style="display:inline-block;margin:12px;">@adrianperezcas</strong><br />
+						<small>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</small>
+					</li>
+				</ul>
+			</div>
+			<div class="clear"></div><br />
+
+		</div>
+	</div>
+
+	<div class="grid cap">
+		<div class="offers" class="col_12 column" >
+			<div class="col_4">
+				<img src="img/personal-training-6.jpg" alt=""/>
+				<h6>SIGNUP FOR 6 MONTHS</h6>
+				<h5>AND GET <span>30%</span> OFF</h5>
+			</div>
+
+			<div class="col_4" >
+				<img src="img/personal-training-med.jpg" alt=""/>
+				<h4>NEED HELP?</h4>
+				<ul>
+					<li>
+						<button><i class="fa fa-phone"></i> 000 000 000 </button>
+					</li>
+					<li>
+						<button><i class="fa fa-send"></i> email@subdomain.domain </button>
+					</li>
+				</ul>
+			</div>
+
+			<div class="col_4">
+				<img src="img/personal-training.jpeg" alt=""/>
+				<h6>GET ACCESS TO</h6>
+				<h5>ALL <span>FACILITIES</span>!</h5>
+			</div>
+
+			
+		</div>
+		<div class="col_12 column center process">
+			<h3 class="center title">ABOUT US</h3>
+
+			<div class="col_3 column">
+
+				<i class="fa fa-book fa-3x"></i><br>
+				ANALYSE YOUR GOAL<br>
+				<small>This text is an example</small>
+			</div>
+
+			<div class="col_3 column">
+				<i class="fa fa-hand-rock-o fa-3x"></i><br>
+				WORK HARD ON IT<br>
+				<small>This text is an example</small>
+			</div>
+
+			<div class="col_3 column">
+
+				<i class="fa fa-heartbeat  fa-3x"></i><br>
+				IMPROVE YOUR PERFORMANCE<br>
+				<small>This text is an example</small>
+			</div>
+
+			<div class="col_3 column">
+
+				<i class="fa fa-area-chart fa-3x"></i><br>
+				ACHIEVE YOUR DESTINY<br>
+				<small>This text is an example</small>
+			</div>
+		</div>
+
+
+		<div class="col_12 column package center">
+			<h3 class="center title">HOW WORKS</h3>		
+			
+		
+</div>
+
+
+</div>
+
+<div class="md-overlay"></div>
+
+<script>
+	$( ".close" ).click(function() {
+		$('#modal-4').removeClass('md-show');
+		$('#modal-11').removeClass('md-show');
+	});
+
+</script>
+
+<script src="js/classie.js"></script>
+<script src="js/modalEffects.js"></script>
+<script src="js/cssParser.js"></script>
+
+
+</body></html>

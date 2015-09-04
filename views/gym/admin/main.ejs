@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<%- include ../head.ejs %>
+<body>
+	<nav class="navbar">
+		<ul class="social user_name">
+			<li><a id="login-btn" href="#">Wellcome, <span>Admin</span></a></li>
+			<li> | </li>
+			<li><a href="/admin/logout">Logout </a></li>
+		</ul>
+	</nav>
+	<div class="col_12" style="margin-top:60px">
+
+		<div class="col_6">
+			<form id="search_box">
+				<input type="text" placeholder="Search user ..." id="tags" autocomplete="off">
+				<button type="button">SEARCH</button>	
+				<div id="suggestions"></div>		
+			</form>
+		</div>
+		
+		<div class="col_6 result_search hide">
+			<div clas="col_6">
+				<img src="/img/profile/55e42f2c60c82e44153cea66" alt="" />
+			</div>
+			<div class="col_6">
+				<span><strong id="username"></strong></span><br><br>
+				<span><strong>Admin: </strong>
+					<label>
+						<input type="checkbox" id="isAdmin" name="isAdmin"/>
+						<span class="content"></span>
+					</label>
+				</span>
+				<br>
+				<span><strong>Email: </strong><small id="email"></small></span><br>
+				<span><strong>Birthday: </strong><small id="bday"></small></span><br>
+				<span><strong>Phone: </strong><small id="phone"></small></span><br>
+				<span><strong>Country: </strong><small id="country"></small></span><br>
+				<span><strong>Current number of box: </strong><small id="numBox"></small></span><br>
+				<span><strong>Max box: </strong><input type="number" min="0" id="maxBox" name="maxBox"></span><button>Apply</button><br>
+			</div>
+		</div>
+
+
+		<div class="col_6 no_user">
+			<i class="fa fa-search fa-3x"></i>
+			<p>To begin , type a user name in the search box on the left and press the Search button!</p>
+		</div>
+	</div>
+	<script>
+		
+		$('#tags').on('input', function() {
+
+
+			if($('#tags').val().length >= 3){
+
+				var	input_txt = $('#tags').val();
+				var data = {'query':input_txt};
+
+				$.ajax({
+					url: "/admin/searchUser",
+					type: "POST",
+					data: data,
+					success: function(response) {
+
+						if(response.status == "no_error"){
+
+							result_array = [];
+
+
+							for (var i = 0; i < response.data.length; i++) {
+
+								result_array.push(response.data[i].username+" | "+response.data[i].email+" | "+response.data[i].fullName);
+
+							};
+							$('#tags').autocomplete({
+
+								source: result_array,
+
+								select: function (event, ui) {
+									var label = ui.item.label;
+									user_email = ui.item.value;
+									var myRe = new RegExp(" [a-z0-9!#$%&'*+/=?^_`-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])? ");
+									email = myRe.exec(user_email)[0].trim();
+									console.log(email);
+									document.valueSelectedForAutocomplete = email;
+								}
+
+							});
+
+						}
+						else if(response.status == "error"){
+
+						}else if(response.status == "no_user"){
+
+						}
+
+					},
+					error: function(xhr) {}
+				});
+}
+});
+
+$('#search_box button').on('click', function() {
+	var data = {'email':email};
+
+	$.ajax({
+		url: "/admin/search/email",
+			  type: "POST", //send it through get method
+			  data: data,
+			  
+			  success: function(response) {
+			  	//alert(response.status);
+			  	if(response.status == "no_error"){
+			  		$('.no_user').addClass('hide');
+			  		$('.result_search').removeClass('hide');
+			  		
+			  		if(response.isOwner == true){
+			  			$('.result_search input[type="checkbox"]').attr('checked',true);
+			  			$('.content').text('YES');
+			  		}else{
+			  			$('.result_search input[type="checkbox"]').attr('checked',false);
+			  			$('.content').text('NO');
+			  		}
+
+			  		$('#username').text(response.username);
+			  		$('#email').text(response.email);
+			  		$('#bday').text(response.birthdate);
+			  		$('#phone').text(response.phone);
+			  		$('#country').text(response.country);
+			  		$('#numBox').text(response.numBox);
+			  		$('#maxBox').val(response.maxBox);
+
+			  		$('.result_search img').attr('src',response.profilePic);
+
+			  	}
+			  },
+			  error: function(xhr) {}
+			});
+});
+
+var check;
+var email;
+var isOwner;
+
+$("#isAdmin").on("click", function(){
+	check = $("#isAdmin").is(":checked");
+	email = $('#email').text();
+
+	if(check) {
+		isOwner = 1;
+		$('.content').text("YES");	  
+	} else {
+		isOwner = 0;
+		$('.content').text("NO");
+	}
+
+	var data = {'isOwner':isOwner, 'email':email};
+
+	$.ajax({
+		url: "/admin/addPrivileges",
+			  type: "POST", //send it through get method
+			  data: data,
+			  
+			  success: function(response) {
+			  //	alert(response.status);
+			},
+			error: function(xhr) {}
+		});
+});
+
+$(".result_search button").on("click",function(){
+
+	var maxBox_value = $('#maxBox').val();
+	email = $('#email').text();
+	var data = {'maxBox':maxBox_value, 'email':email};
+
+	$.ajax({
+		url: "/admin/AddNumberOfBox",
+			  type: "POST", //send it through get method
+			  data: data,
+			  
+			  success: function(response) {
+			  //	alert(response.status);
+			},
+			error: function(xhr) {}
+		});
+});
+
+</script>
+</body>
+
+</html>

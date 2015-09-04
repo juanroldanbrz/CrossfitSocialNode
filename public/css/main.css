@@ -1,0 +1,32 @@
+.btn_user{
+	color:#fff;
+	position:relative;
+	background-color:#222;
+	padding:4px;
+}
+
+.inf input[type="text"],.inf input[type="number"]{
+	border:none;
+	padding:0;
+	width: 100%;
+}
+
+.aside_main{
+	z-index:999999999;position:relative;
+}
+
+.aside{
+	background-color:#fff;margin-top:-0.5em;left:-11px;position:fixed;height:100%;color:white;overflow-y:scroll;
+}
+.header_aside{
+	position:absolute;background-color:#EC1717;width:100%;padding:15px;left:0;z-index:999;
+}
+.tabs_aside{
+	position:relative;top:46px;z-index:99;
+}
+.img_aside{
+	width:50%;border-radius:100px;cursor:pointer;
+}
+#more_info,#suplements,#clothes,#benchmark{
+	color:#222;padding:10px;
+}

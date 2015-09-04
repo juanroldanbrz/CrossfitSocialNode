@@ -1,0 +1,84 @@
+<div class="col_3 aside">
+
+			<div class="header_aside" >
+				<div class="col_11">
+					PROFILE INFO
+				</div>
+
+				<div class="col_1">
+					<a href="#config" class="md-trigger" data-modal="modal-5"><i class="fa fa-cog"></i></a>
+				</div>
+			</div>
+			<div class="col_12 tabs_aside">
+				<ul class="tabs left">
+					<li class="info normal"><a href="#more_info">INFO</a></li>
+					<li class="suplements normal"><a href="#suplements">SUPLEMENTS</a></li>
+					<li class="clothes normal"><a href="#clothes">CLOTHES</a></li>
+					<li class="benchmark normal"><a href="#benchmark">BENCHMARK</a></li>
+				</ul>
+
+				<div id="more_info" class="tab-content">
+					<form enctype="multipart/form-data">
+						<div class="col_12 center">
+							<label for="fileToUpload">
+								<img src="<%=user.profilePic%>" class="img-upload img_aside" alt="" />
+							</label>
+							<input type="File" name="profilePic" id="fileToUpload">
+							<br><br>
+							<strong><%=user.fullName%></strong>
+							<!-- <img style="margin-left:7px;" src="img/flags/spain.png" alt="" /> -->
+						</div>
+
+						<div class="col_12 column inf">
+
+							<p>Birthdate:</p><input id="bd_txt" type="text" />
+							<p>Email:</p><input id="email_txt" type="text" />
+							<p>Phone:</p><input id="phone_txt" type="text"  />
+							<p>Credits:</p><input id="credits_txt" type="text" />
+							<button type="button">CHANGE</button>
+
+						</div>
+					</form>
+				</div>
+
+				<div id="suplements" class="tab-content">
+					<div class="col_12 column inf">
+						<form>
+							<p>Protein Trademark:</p><input id="protein_trademark" type="text" />
+							<p>Carbo Trademark:</p><input id="carbo_trademark" type="text" />
+							<p>Multivitamin Trademark:</p><input id="multivitamin_trademark" type="text" />
+							<p>Creatine Trademark</p><input id="creatine_trademark" type="text" />
+							<p>Magnesium Trademark</p><input id="magnesium_trademark" type="text" />
+							<p>Omega3 Trademark</p><input id="omega3_trademark" type="text" />
+							<button type="button">CHANGE</button>
+						</form>
+					</div>
+
+				</div>
+				<div id="clothes" class="tab-content">
+					<div class="col_12 column inf">
+						<form>
+							<p>Shoe Trademark:</p><input id="shoe_trademark" type="text" />
+							<p>Shoe Model:</p><input id="shoe_model" type="text" />
+							<p>Hand Grips Trademark:</p><input id="hand_grips_trademark" type="text" />
+							<p>Gloves Trademark:</p><input id="gloves_trademark" type="text" />
+							<button type="button">CHANGE</button>
+						</form>
+					</div>
+				</div>
+				<div id="benchmark" class="tab-content">
+					<div class="col_12 column inf">
+						<form>
+							<p>Fran</p><input id="fran_txt" type="number" />
+							<p>Helen:</p><input id="helen_txt" type="number" />
+							<p>Grace:</p><input id="grace_txt" type="number"  />
+							<p>Fifth50:</p><input id="fifth50_txt" type="number" />
+							<p>Fightgonebad</p><input id="fightgonebad_txt" type="number" />
+							<p>Sprint400m</p><input id="sprint400m_txt" type="number" />
+							<p>Run5k</p><input id="run5k_txt" type="number" />
+							<button type="button">CHANGE</button>
+						</form>
+					</div>
+				</div>		
+			</div>			
+		</div>	

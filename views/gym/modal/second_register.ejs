@@ -1,0 +1,37 @@
+<div class="md-modal md-effect-1 md-show" id="modal-3">
+	<div class="md-content">
+		<h3>Register #2</h3>
+
+		<div>
+
+			<form id="register2" action="/completeData" method="POST" enctype="multipart/form-data">
+
+				<div class="col_6">
+					<input type="text" name="name" placeholder="Name">
+					<input type="text" name="surname" placeholder="Surname">
+
+				</div>
+				<div class="col_6">
+					<input type="text" name="email" placeholder="email">
+					<input type="number" name="phone" placeholder="Phone">
+				</div>
+				<div class="col_6">
+					<select name="country">
+						<option name="Spain" value="Spain">Spain</option>
+					</select>
+				</div>
+				
+				<input type="date" name="birthdate" style="border:2px solid #ddd;color:#222" >
+				
+				<div class="col_12">
+					<label for="fileToUpload" id="fileToUpload">
+						<p  class="front-file"><i class="fa fa-upload"></i> Upload your photo</p>
+					</label>
+					<input type="File" name="profilePic" id="fileToUpload">
+				</div>
+				<input class="md-close" type="submit" value="SEND">
+			</form>
+
+		</div>
+	</div>
+</div>

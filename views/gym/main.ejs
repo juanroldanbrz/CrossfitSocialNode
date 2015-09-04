@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<%- include head.ejs %>
+<body>
+
+	<div class="md-modal md-effect-1 center" id="modal-8">
+		<div class="md-content">
+			<h3></h3>
+			<div id="error">
+			</div>
+			<button class="md-close close">Close me!</button>
+		</div>
+	</div>
+
+
+	<div class="md-modal md-effect-1" id="modal-5">
+		<div class="md-content">
+			<h3>Change password</h3>
+			<div>
+				<form id="edit">
+					<input type="password" name="oldPassword" id="oldPassword"placeholder="Old password" />
+					<input type="password" name="newPassword" id="newPassword" placeholder="New password" />
+					<input type="password" name="newPassword2" placeholder="Repeat new password" id="newPassword2"/>
+					<button type="button" class="md-close">SEND</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- HEADER -->
+
+	<%- include loggedIn/partials/header.ejs %>
+
+	<div class="col_12 column aside_main" >
+
+		<!-- ASIDE -->	
+		<%- include loggedIn/partials/aside.ejs %>
+
+	</div>
+
+	<div class="col_12 column" style="position:absolute;top:50px;float:right;color:#fff;">
+
+		<div class="col_3" style="float:right;">
+
+			<!-- FRIENDS -->
+			<%- include loggedIn/partials/friends.ejs %>
+
+			<!-- FEEDS -->
+			<%- include loggedIn/feeds.ejs %>
+
+			<!-- SEARCH BOX -->
+
+			<%- include loggedIn/search_box.ejs %>
+
+
+			<!-- CREATE BOX -->
+
+			<%- include loggedIn/create_box.ejs %>
+		</div>
+
+
+		<div class="md-overlay"></div>
+		<script src="js/main.js" type="text/javascript"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/modalEffects.js"></script>
+		<script src="js/cssParser.js"></script>
+
+
+	</body>
+	</html>

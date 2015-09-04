@@ -1,0 +1,40 @@
+<div id="create_box" class="tab-content">
+	<div class="col_6" style="float:right;">
+
+		<div class="col_12" style="background-color:#2d2b2a;padding:5px">
+			Create box
+		</div>
+
+		<div class="main-list center">
+			<div class="success_main">
+				<form enctype="multipart/form-data">
+					
+					<div class="col_6">
+						<input type="text" placeholder="Name" name="name" id="name"/>
+						<input type="text" placeholder="City" name="city" id="city"/>
+						<textarea type="text" placeholder="Tariffs" name="tariffs" id="tariffs" maxlength="100"></textarea><br>
+						<label for="fileToUpload" id="fileToUpload">
+							<p  class="front-file"><i class="fa fa-upload"></i> Upload your photo</p>
+						</label>
+						<input type="File" name="profilePic" id="fileToUpload">
+			</div>
+			<div class="col_6">
+				<input type="text" placeholder="Address" name="address" id="address" /><br>
+				<select name="country" id="country">
+				</select>
+				<textarea id="description" name="description" placeholder="Description"></textarea>
+			</div>
+
+			<button id="create">CREATE BOX</button>
+
+		</form>
+	</div>
+	<div class="error_main sec5">
+		<i class="fa fa-warning"></i>
+		<p>Oops!! There is an error!</p>
+		<small></small>
+	</div>
+</div>
+
+</div>
+</div>
