@@ -7,6 +7,7 @@ var formValidator = require('../utils/formValidator.js');
 var User = require('../models/user');
 var Box = require('../models/box');
 var config = require('../../config/config');
+var fs    = require("fs");
 
 module.exports = function(app) {
     app.post('/box/createBox/newBox', ownerMiddleware.isOwnerLogged, function(req,res){
@@ -20,29 +21,6 @@ module.exports = function(app) {
             newBox.tariffs = req.body.tariffs;
             newBox.address = req.body.address;
             newBox.owner = req.user._id;
-            if (req.files.boxPicture == null) {
-                newBox.save(function (err) {
-                    if (err)
-                        throw err;
-            });}
-            else{
-                fs.readFile(req.files.profilePic.path, function (err, data) {
-                    var newPath = __dirname + "/../../public/img/box/" + newBox._id;
-
-                    fs.writeFile(newPath, data, function (err) {
-                        if (err)
-                            throw err;
-                        newBox.profilePic = "/img/box/" + newBox._id;
-                        newBox.save(function (err) {
-                            if (err)
-                                throw err;
-
-                        });
-
-                    });
-                });
-
-            }
             User.findById(req.user._id,function(err,user){
                 if(err)
                     throw err;
@@ -50,13 +28,35 @@ module.exports = function(app) {
                     res.send({status:'error'});
                 else
                     user.numBox = user.numBox+1;
-                    user.save(function (err) {
-                        if (err)
-                            throw err;
-                        res.send({status:'no_error'});
+                user.save(function (err) {
+                    if (err)
+                        throw err;
+                    if (req.files.boxPicture == null) {
+                        newBox.save(function (err) {
+                            if (err)
+                                throw err;
+                            res.send({status:'no_error'});
 
 
-                    });
+                        });
+                    } else{
+                        fs.readFile(req.files.boxPicture.path, function (err, data) {
+                            var newPath = __dirname + "/../../public/img/box/" + newBox._id;
+
+                            fs.writeFile(newPath, data, function (err) {
+                                if (err)
+                                    throw err;
+                                newBox.boxPicture = "/img/box/" + newBox._id;
+                                newBox.save(function (err) {
+                                    if (err)
+                                        throw err;
+                                    res.send({status:'no_error'});
+
+                                    });
+                                });
+                            });
+                    }
+                });
 
 
 
@@ -64,10 +64,8 @@ module.exports = function(app) {
 
 
 
-
-
         }
-        else return {status:'error'};
+        else res.send({status:'error'});
     });
     app.post('/box/createBox', ownerMiddleware.isOwnerLogged, function(req,res){
         User.findById(req.user._id, function(err, myUser) {

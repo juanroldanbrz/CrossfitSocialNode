@@ -352,7 +352,7 @@ $('.create_box').on("click",function(){
 });
 
 $('#create').on("click",function(){
-	alert();
+	
 	var name_txt = $('#name').val();
 	var city = $('#city').val();
 	var tariffs = $('#tariffs').val();
@@ -363,7 +363,7 @@ $('#create').on("click",function(){
 	var file = $('#fileToUpload')[0].files[0];
 	var data = new FormData();
 
-	data.append('profilePic',file);
+	data.append('boxPicture',file);
 	data.append('name',name_txt);
 	data.append('city',city);
 	data.append('tariffs',tariffs);
@@ -373,17 +373,48 @@ $('#create').on("click",function(){
 
 
 
-	var request = new XMLHttpRequest();
-	request.open("POST", "/box/createBox/newBox");
+	// var request = new XMLHttpRequest();
+	// request.open("POST", "/box/createBox/newBox");
+	// request.onreadystatechange = function (aEvt) {
+	// 	if (request.readyState == 4) {
+	// 		if(request.status == 200)
+	// 		a=5;
+	// 			//location.reload();
+	// 	}
+	// };
+	// request.send(data);
 
-	request.onreadystatechange = function (aEvt) {
-		if (request.readyState == 4) {
-			if(request.status == 200)
-				location.reload();
-		}
-	};
 
-	request.send(data);
+	$.ajax({
+			url: "/box/createBox/newBox",
+			  type: "POST", //send it through get method
+			  data: data,
+			  
+			  processData: false,
+			  contentType: false,
+			  
+			  success: function(response) {
+			  	if(response.status == 'no_error') {
+			  		// $('#modal-8').addClass('md-show');
+			  		// $('#modal-8 h3').text('Password Changed!')
+			  		// $('#modal-8 #error').text('Your password has been changed');
+			  		alert("NO HAY ERRORES");
+			  	}else{
+			  		// $('#modal-8').addClass('md-show');
+			  		// $('#modal-8 h3').text('Oops!! There is an error!')
+			  		// $('#modal-8 #error').text('Please, Try it again later');
+alert("no");
+			  	}
+			  },
+			  error: function(xhr) {
+				  alert("NADA");
+			  	// $('#modal-8').addClass('md-show');
+			  	// $('#modal-8 h3').text('Oops!! There is an error!')
+			  	// $('#modal-8 #error').text('Please, Try it again later');
+			  	
+			  }
+
+			});
 
 });
 

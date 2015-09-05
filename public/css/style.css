@@ -20,9 +20,24 @@ h2{
 }
 
 thead th,
-tbody th{
-	font-family: 'Roboto', sans-serif;
-}
+	tbody th{
+		font-weight: bold;
+		font-size: 22px;
+		text-transform: uppercase;
+		line-height: 24px;
+		color: #fafafa;
+		text-shadow: 1px 1px 2px rgba(0,0,0, .4);
+		background: url('/img/header-table.png') repeat-x 0 0;
+		width: 210px;
+		height: 42px;
+		padding: 15px 0;
+		text-align: center;
+	}
+	td strong{
+		color:#EC1717;
+		font-size: 19px;
+	}
+
 
 button,
 a.btn,
@@ -172,6 +187,7 @@ a.callout{cursor:pointer;}
 	height: 50px;
 	display: inline-block;
 	outline: 0;
+	width:50%; 
 }
 #newsletter > button{
 
@@ -279,8 +295,9 @@ h5 > span{
 	input[type="text"]{
 		padding:10px;
 		border:2px solid #ddd;
-		margin:5px;
+		margin-bottom:10px;
 		outline: 0;
+		width:100%;
 	}
 
 	#login input[type="submit"]{
@@ -313,14 +330,14 @@ h5 > span{
 		}
 		select{
 			padding:10px;
-			margin:5px;
+			margin-bottom:10px;
 			border:2px solid #ddd;
 			width: 87%;
 			outline: 0;
 		}
 		form input[type="password"],input[type="number"]{
 			padding:10px;
-			margin:5px;
+			margin-bottom:10px;
 			border:2px solid #ddd;
 			outline: 0;
 		}
@@ -476,13 +493,13 @@ h5 > span{
 		}
 		.success_main textarea{
 			padding:10px;height:120px;resize: none;
-			border:2px solid #ddd;width:65.5%;
+			border:2px solid #ddd;width:100%;
 		}
 		.success_main select{
-			width:65.5%;
+			width:100%;
 		}
 		.success_main label  > button{
-			width:67%;
+			width:100%;
 			height: 40px;
 			padding:5px;
 		}
@@ -503,6 +520,7 @@ h5 > span{
 		.front-file:hover{
 			background-color:#EC1717;
 		}
+
 		.front-file i{
 			color:#fff;
 		}
@@ -534,4 +552,8 @@ h5 > span{
 			float:left;
 			margin-left:10px;
 		}
+
+
+/**Parallax*/
+
 

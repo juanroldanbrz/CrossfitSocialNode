@@ -7,8 +7,7 @@
 
 		<div class="main-list center">
 			<div class="success_main">
-				<form enctype="multipart/form-data">
-					
+				<form>
 					<div class="col_6">
 						<input type="text" placeholder="Name" name="name" id="name"/>
 						<input type="text" placeholder="City" name="city" id="city"/>
@@ -17,18 +16,18 @@
 							<p  class="front-file"><i class="fa fa-upload"></i> Upload your photo</p>
 						</label>
 						<input type="File" name="profilePic" id="fileToUpload">
-			</div>
+				</div>
 			<div class="col_6">
 				<input type="text" placeholder="Address" name="address" id="address" /><br>
-				<select name="country" id="country">
-				</select>
+				<select name="country" id="country"></select>
 				<textarea id="description" name="description" placeholder="Description"></textarea>
 			</div>
 
-			<button id="create">CREATE BOX</button>
 
-		</form>
-	</div>
+			</form>
+				<button id="create">CREATE BOX</button>
+
+			</div>
 	<div class="error_main sec5">
 		<i class="fa fa-warning"></i>
 		<p>Oops!! There is an error!</p>
