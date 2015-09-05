@@ -11,8 +11,8 @@ var config = {
         secret: 'c5701f37e52070c1e58d98d6049a3948'
     },
     gmail:{
-        user: 'antoniomoyamora@gmail.com',
-        pass: 'Escarabajo93!'
+        user: 'tuUser@gmail.com',
+        pass: 'tuContrasenia'
     },
     admin:{
         user: 'adminboxify',
