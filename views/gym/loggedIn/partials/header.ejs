@@ -4,17 +4,15 @@
 			<li> | </li>
 			<li><a href="/logout">Logout </a></li>
 		</ul>
-		<div class="social col_6" style="float:right;margin-top:12px">
-			<ul class="tabs right">
-				<li class="normal"><a href="#feed_panel"><i class="fa fa-home"></i> Home</a></li>
-				<li class="normal"><a href="#my_box_panel"><i class="fa fa-user"></i> My box</a></li>
+		<div class="social col_6" style="margin-top:12px">
+			<ul class="tabs left">
+				<li class="normal"><a href="#feed_panel"><i class="fa fa-home"></i> My box</a></li>
 				<li class="normal"><a href="#search_box">Search box</a></li>
 				<li class="normal"><a href="#tabc3">Search user</a></li>
 
 				<% if(user.isOwner){%>
 
 				<li class="red create_box"><a href="#create_box">Create box</a></li>
-				<li class="red admin_box"><a href="#tabc3">Admin box</a></li>
 				<li class="red invite"><a href="#tabc3">Invite friends</a></li>
 				<%}%>
 

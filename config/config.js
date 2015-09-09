@@ -24,6 +24,11 @@ var config = {
     },
     box:{
         numberOfNewBoxesToShow: 1
+    },
+    training:{
+        types : [
+            {name: 'nombre_del_entrenamiento'}
+        ]
 
     }
 }

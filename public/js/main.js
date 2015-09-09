@@ -3,7 +3,7 @@
 	$('.success_main').hide();
 	
 	$('.sec5').hide();
-	
+
 	$.ajax({
 		url: "/profile",
 			  type: "POST", //send it through get method
@@ -36,6 +36,7 @@
 			  }
 			});
 	createBoxAjax();
+	//showListBoxes();
 
 	function get_countries(){
 		var country_list = ["Afghanistan","Albania","Algeria","Andorra","Angola","Anguilla","Antigua &amp; Barbuda","Argentina","Armenia","Aruba","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bermuda","Bhutan","Bolivia","Bosnia &amp; Herzegovina","Botswana","Brazil","British Virgin Islands","Brunei","Bulgaria","Burkina Faso","Burundi","Cambodia","Cameroon","Cape Verde","Cayman Islands","Chad","Chile","China","Colombia","Congo","Cook Islands","Costa Rica","Cote D Ivoire","Croatia","Cruise Ship","Cuba","Cyprus","Czech Republic","Denmark","Djibouti","Dominica","Dominican Republic","Ecuador","Egypt","El Salvador","Equatorial Guinea","Estonia","Ethiopia","Falkland Islands","Faroe Islands","Fiji","Finland","France","French Polynesia","French West Indies","Gabon","Gambia","Georgia","Germany","Ghana","Gibraltar","Greece","Greenland","Grenada","Guam","Guatemala","Guernsey","Guinea","Guinea Bissau","Guyana","Haiti","Honduras","Hong Kong","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Isle of Man","Israel","Italy","Jamaica","Japan","Jersey","Jordan","Kazakhstan","Kenya","Kuwait","Kyrgyz Republic","Laos","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Macau","Macedonia","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Mauritania","Mauritius","Mexico","Moldova","Monaco","Mongolia","Montenegro","Montserrat","Morocco","Mozambique","Namibia","Nepal","Netherlands","Netherlands Antilles","New Caledonia","New Zealand","Nicaragua","Niger","Nigeria","Norway","Oman","Pakistan","Palestine","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland","Portugal","Puerto Rico","Qatar","Reunion","Romania","Russia","Rwanda","Saint Pierre &amp; Miquelon","Samoa","San Marino","Satellite","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","South Africa","South Korea","Spain","Sri Lanka","St Kitts &amp; Nevis","St Lucia","St Vincent","St. Lucia","Sudan","Suriname","Swaziland","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Timor L'Este","Togo","Tonga","Trinidad &amp; Tobago","Tunisia","Turkey","Turkmenistan","Turks &amp; Caicos","Uganda","Ukraine","United Arab Emirates","United Kingdom","Uruguay","Uzbekistan","Venezuela","Vietnam","Virgin Islands (US)","Yemen","Zambia","Zimbabwe"];
@@ -74,16 +75,44 @@
 		});
 	}
 
-	$('#modal-8 button').on("click", function(){
-		$('#modal-8').removeClass('md-show');
-		$('#modal-8').addClass('md-hide');
-	});
-
-
-	$( ".suplements a" ).on( "click", function() {
+	/*function showListBoxes(){
 
 		$.ajax({
-			url: "/profile/suplements",
+			url: "/box/myBoxes",
+			type: "POST",
+
+			success: function(response) {
+
+				if(response.status == "no_error"){
+
+					$('.ul_list').empty();
+
+					for(var i=0;i< response.data.length;i++){
+
+						var list = "<li class='list-itm' id='"+response.data[i].id+"'><img src='"+response.data[i].boxPicture+"' alt=''/><p>Name: "
+						+response.data[i].name+"</p><p>Tariffs:"+response.data[i].tariffs+"</p><button><i class='fa fa-cog'></i> Modify box</button><button class='training'><i class='fa fa-remove'></i> Training</button><button><i class='fa fa-remove'></i> Delete box</button></li></li>";
+
+						$('.ul_list').append(list);
+					}
+
+				}
+
+
+			},
+			error: function(xhr) {}
+		});
+}*/
+
+$('#modal-8 button').on("click", function(){
+	$('#modal-8').removeClass('md-show');
+	$('#modal-8').addClass('md-hide');
+});
+
+
+$( ".suplements a" ).on( "click", function() {
+
+	$.ajax({
+		url: "/profile/suplements",
 			  type: "POST", //send it through get method
 			  // data: data,
 			  processData: false,
@@ -114,7 +143,7 @@
 			  	//Algo falló
 			  }
 			});
-	});
+});
 
 
 $( ".benchmark a" ).on( "click", function() {
@@ -386,7 +415,7 @@ $('#create').on("click",function(){
 
 
 	$.ajax({
-			url: "/box/createBox/newBox",
+		url: "/box/createBox/newBox",
 			  type: "POST", //send it through get method
 			  data: data,
 			  
@@ -403,11 +432,11 @@ $('#create').on("click",function(){
 			  		// $('#modal-8').addClass('md-show');
 			  		// $('#modal-8 h3').text('Oops!! There is an error!')
 			  		// $('#modal-8 #error').text('Please, Try it again later');
-alert("no");
+			  		alert("no");
 			  	}
 			  },
 			  error: function(xhr) {
-				  alert("NADA");
+			  	alert("NADA");
 			  	// $('#modal-8').addClass('md-show');
 			  	// $('#modal-8 h3').text('Oops!! There is an error!')
 			  	// $('#modal-8 #error').text('Please, Try it again later');
@@ -418,6 +447,10 @@ alert("no");
 
 });
 
+$('#adm_bx').on("click", function(){
+	
+	showListBoxes();
+});
 
 //search_box
 
@@ -428,6 +461,7 @@ $('#tags').on('input', function() {
 
 		var	input_txt = $('#tags').val();
 		var data = {'query':input_txt};
+		var status;
 
 		$.ajax({
 			url: "/box/search",
@@ -440,59 +474,73 @@ $('#tags').on('input', function() {
 					$('.result_search_list').empty();
 
 					for(var i=0;i< response.data.length;i++){
-						
-					var list = "<li><img src='"+response.data[i].boxPicture+"' alt=''/><strong>"+response.data[i].name+"</strong><br><small>Description: "+response.data[i].description+"</small><br><small>Tariffs: "+response.data[i].tariffs+"</small><br><small>City: "+response.data[i].city+"</small><br><small>Country: "+response.data[i].country+"</small><br><small>Address: "+response.data[i].address+"</small><br></li>";
+						if(response.data[i].following == true){
+							status = "FOLLOWING";
+						}else{
+							status = "JOIN";
+						}	
+						var list = "<li id="+response.data[i].id+"><button class='btn_follow'>"+status+"</button><img src='"+response.data[i].boxPicture+"' alt=''/><strong>"+response.data[i].name+"</strong><br><small>Description: "+response.data[i].description+"</small><br><small>Tariffs: "+response.data[i].tariffs+"</small><br><small>City: "+response.data[i].city+"</small><br><small>Country: "+response.data[i].country+"</small><br><small>Address: "+response.data[i].address+"</small><br></li>";
 
-					$('.result_search_list').append(list);
+						$('.result_search_list').append(list);
+					}
+
 				}
 
-			}
-
-		},
-		error: function(xhr) {}
-	});
+			},
+			error: function(xhr) {}
+		});
 	}
 });
 
-/*$('#search_box button').on('click', function() {
-	var data = {'email':email};
+
+
+
+
+$(".result_search_list").on("click","button",function(){
+
+	var id = $(this).parent('li').attr("id");
+	var data = {'id':id};
+	var $this = $(this);
 
 	$.ajax({
-		url: "/admin/search/email",
-			  type: "POST", //send it through get method
-			  data: data,
-			  
-			  success: function(response) {
-			  	//alert(response.status);
-			  	if(response.status == "no_error"){
-			  		$('.no_user').addClass('hide');
-			  		$('.result_search').removeClass('hide');
-			  		
-			  		if(response.isOwner == true){
-			  			$('.result_search input[type="checkbox"]').attr('checked',true);
-			  			$('.content').text('YES');
-			  		}else{
-			  			$('.result_search input[type="checkbox"]').attr('checked',false);
-			  			$('.content').text('NO');
-			  		}
+		url: "/box/followAndUnfollowBox",
+		type: "POST",
+		data: data,
+		success: function(response) {
+			
+			if(response.status == "followed"){
+				$this.parent('li').children('button').text("FOLLOWING");
+			}else if(response.status == "unfollowed"){
+				$this.parent('li').children('button').text("JOIN");
+			}
+		},
+		error: function(xhr) {}
+	});
 
-			  		$('#username').text(response.username);
-			  		$('#email').text(response.email);
-			  		$('#bday').text(response.birthdate);
-			  		$('#phone').text(response.phone);
-			  		$('#country').text(response.country);
-			  		$('#numBox').text(response.numBox);
-			  		$('#maxBox').val(response.maxBox);
-
-			  		$('.result_search img').attr('src',response.profilePic);
-
-			  	}
-			  },
-			  error: function(xhr) {}
-			});
 });
 
-*/
+$('#list_members').on("click",function(){
+	
+	
+	$.ajax({
+		url: "/box/currentBox/members",
+		type: "POST",
+		//data: data,
+		success: function(response) {
+			
+			 if(response.status=="no_error"){
+				$('.members-list').empty();
 
+				for(var i=0;i< response.data.length;i++){
+
+					var list = "<li><img src="+response.data[i].profilePic+"><strong>"+response.data[i].fullName+"</strong><small>, "+response.data[i].age+" años</small><br><i style='color:#888' class='fa fa-map-marker'></i><small>"+response.data[i].country+"</small></li>";
+					$('.members-list').append(list);
+				}
+			}
+					},
+					error: function(xhr) {}
+				});
+
+});
 
 });

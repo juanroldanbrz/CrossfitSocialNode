@@ -53,6 +53,30 @@ module.exports = function(app) {
 
             });
 
+    app.post('/admin/changeBoxName',middleware.isAdminLogged,function (req, res) {
+        if(formValidator.isAValidInput(req,['boxName','newName']))
+        {
+            Box.findOne({name:req.body.boxName},function(err,box) {
+                if (err)
+                    throw err;
+                if (!box)
+                    res.send({status: 'error'});
+                else {
+                    box.name = req.body.newName;
+                    box.save(function (err) {
+                        if (err)
+                            throw err;
+                        res.send({status: 'no_error'});
+                    });
+                }
+            });
+        }
+        else
+            res.send({status:'error'});
+
+
+    });
+
 
         app.post('/admin/addPrivileges',middleware.isAdminLogged,function (req, res) {
         if(formValidator.isAValidInput(req,['email','isOwner']) && req.body.isOwner==0 || req.body.isOwner==1){
@@ -120,6 +144,9 @@ module.exports = function(app) {
         else res.send({status:'error'});
     });
 
+
+
+
     app.post('/admin/searchUser',middleware.isAdminLogged,function (req, res){
         if(formValidator.isAValidInput(req,['query'])){
             User.find({$or : [{username: { $regex: new RegExp(req.body.query)  }},{email:{ $regex: new RegExp(req.body.query)  }},{fullName: { $regex: new RegExp(req.body.query,'i')  }}]},function(err,user){
@@ -154,7 +181,7 @@ module.exports = function(app) {
                 else
                 {
                     data = [];
-                    for(var i=0;i<user.length;i++){
+                    for(var i=0;i<boxes.length;i++){
                         data.push({
                             name:boxes[i].name,
                             description:boxes[i].description,
@@ -163,7 +190,6 @@ module.exports = function(app) {
                             city:boxes[i].city,
                             country:boxes[i].country,
                             address:boxes[i].address   });
-                        res.send({status:'no_error',data:data});
                     }
                     if(data.length!=0)
                         res.send({status:'no_error',data:data});

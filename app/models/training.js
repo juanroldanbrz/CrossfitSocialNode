@@ -11,7 +11,8 @@ var UserSchema = new mongoose.Schema({
     text : String,
     vote : Number,
     credits : Number, //Numero de creditos que cuesta el entrenamiento
-    photo : String
+    photo : String,
+    box: String
     });
 
 module.exports = mongoose.model('Training', UserSchema);

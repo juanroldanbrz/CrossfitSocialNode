@@ -14,12 +14,20 @@
 		<div class="col_6">
 			<form id="search_box">
 				<input type="text" placeholder="Search user ..." id="tags" autocomplete="off">
-				<button type="button">SEARCH</button>	
+				<button type="button" id="search_user">SEARCH</button>	
 				<div id="suggestions"></div>		
 			</form>
 		</div>
-		
-		<div class="col_6 result_search hide">
+		<div class="col_6">
+			<form id="search_box">
+				<input type="text" placeholder="Search box ..." id="tags2" autocomplete="off">
+				<button type="button" id="search_b">SEARCH</button>	
+				<div id="suggestions"></div>		
+			</form>
+		</div>
+	</div>
+	<div class="col_12">
+		<div class="col_6 result_search_user hide">
 			<div clas="col_6">
 				<img src="/img/profile/55e42f2c60c82e44153cea66" alt="" />
 			</div>
@@ -40,15 +48,29 @@
 				<span><strong>Max box: </strong><input type="number" min="0" id="maxBox" name="maxBox"></span><button>Apply</button><br>
 			</div>
 		</div>
+		<!--BOX -->
+		<div class="col_6 result_search hide">
+			<div clas="col_6">
+				<img src="/img/profile/55e42f2c60c82e44153cea66" alt="" />
+			</div>
+			<div class="col_6">
+				<span><strong id="name"></strong><input type="text" id="result_box_val"></span><br><br>
+				<button>Change name</button>
+			</div>
+		</div>
 
 
-		<div class="col_6 no_user">
+
+		<div class="col_12 no_user">
 			<i class="fa fa-search fa-3x"></i>
-			<p>To begin , type a user name in the search box on the left and press the Search button!</p>
+			<p>To begin , type a user name (Username, full name, email) OR type box name (Name) in the search box on the left and press the Search button!</p>
 		</div>
 	</div>
+
 	<script>
-		
+		var label;
+		var old_label;
+
 		$('#tags').on('input', function() {
 
 
@@ -67,7 +89,6 @@
 
 							result_array = [];
 
-
 							for (var i = 0; i < response.data.length; i++) {
 
 								result_array.push(response.data[i].username+" | "+response.data[i].email+" | "+response.data[i].fullName);
@@ -78,7 +99,7 @@
 								source: result_array,
 
 								select: function (event, ui) {
-									var label = ui.item.label;
+									label = ui.item.label;
 									user_email = ui.item.value;
 									var myRe = new RegExp(" [a-z0-9!#$%&'*+/=?^_`-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])? ");
 									email = myRe.exec(user_email)[0].trim();
@@ -101,7 +122,91 @@
 }
 });
 
-$('#search_box button').on('click', function() {
+//BOX
+$('#tags2').on('input', function() {
+
+
+	if($('#tags2').val().length >= 3){
+
+		var	input_txt = $('#tags2').val();
+		var data = {'query':input_txt};
+
+		$.ajax({
+			url: "/admin/searchBox",
+			type: "POST",
+			data: data,
+			success: function(response) {
+
+				if(response.status == "no_error"){
+
+					result_array = [];
+
+
+					for (var i = 0; i < response.data.length; i++) {
+
+						result_array.push(response.data[i].name);
+
+					};
+					$('#tags2').autocomplete({
+
+						source: result_array,
+
+						select: function (event, ui) {
+							
+							label = ui.item.label;
+							document.valueSelectedForAutocomplete = label;
+
+							
+						}
+
+					});
+
+				}
+				else if(response.status == "error"){
+
+				}else if(response.status == "no_user"){
+
+				}
+
+			},
+			error: function(xhr) {}
+		});
+	}
+});
+
+
+//Box
+$('#search_b').on('click', function() {
+	var data = {'query':label};
+	
+	$.ajax({
+		url: "/admin/searchBox",
+			  type: "POST", //send it through get method
+			  data: data,
+			  
+			  success: function(response) {
+			  	//alert(response.status);
+			  	if(response.status == "no_error"){
+			  		$('.no_user').addClass('hide');
+			  		$('.result_search').removeClass('hide');
+
+			  		for (var i = 0; i < response.data.length; i++) {
+			  			$('.result_search #result_box_val').val(response.data[i].name);
+			  			old_label = response.data[i].name;
+
+			  			//boxName;
+			  			//newName;
+			  			$('.result_search img').attr('src',response.data[i].boxPicture);
+			  		}
+			  	}
+			  },
+			  error: function(xhr) {}
+			});
+});
+
+
+
+$('#search_box #search_user').on('click', function() {
 	var data = {'email':email};
 
 	$.ajax({
@@ -113,25 +218,64 @@ $('#search_box button').on('click', function() {
 			  	//alert(response.status);
 			  	if(response.status == "no_error"){
 			  		$('.no_user').addClass('hide');
-			  		$('.result_search').removeClass('hide');
+			  		$('.result_search_user').removeClass('hide');
 			  		
 			  		if(response.isOwner == true){
-			  			$('.result_search input[type="checkbox"]').attr('checked',true);
-			  			$('.content').text('YES');
+			  			$('.result_search_user input[type="checkbox"]').attr('checked',true);
+			  			$('.result_search_user .content').text('YES');
 			  		}else{
-			  			$('.result_search input[type="checkbox"]').attr('checked',false);
-			  			$('.content').text('NO');
+			  			$('.result_search_user input[type="checkbox"]').attr('checked',false);
+			  			$('.result_search_user .content').text('NO');
 			  		}
 
-			  		$('#username').text(response.username);
-			  		$('#email').text(response.email);
-			  		$('#bday').text(response.birthdate);
-			  		$('#phone').text(response.phone);
-			  		$('#country').text(response.country);
-			  		$('#numBox').text(response.numBox);
-			  		$('#maxBox').val(response.maxBox);
+			  		$('.result_search_user #username').text(response.username);
+			  		$('.result_search_user #email').text(response.email);
+			  		$('.result_search_user #bday').text(response.birthdate);
+			  		$('.result_search_user #phone').text(response.phone);
+			  		$('.result_search_user #country').text(response.country);
+			  		$('.result_search_user #numBox').text(response.numBox);
+			  		$('.result_search_user #maxBox').val(response.maxBox);
 
-			  		$('.result_search img').attr('src',response.profilePic);
+			  		$('.result_search_user img').attr('src',response.profilePic);
+
+			  	}
+			  },
+			  error: function(xhr) {}
+			});
+});
+
+
+$('#search_box #search_user').on('click', function() {
+	var data = {'email':email};
+
+	$.ajax({
+		url: "/admin/search/email",
+			  type: "POST", //send it through get method
+			  data: data,
+			  
+			  success: function(response) {
+			  	//alert(response.status);
+			  	if(response.status == "no_error"){
+			  		$('.no_user').addClass('hide');
+			  		$('.result_search_user').removeClass('hide');
+			  		
+			  		if(response.isOwner == true){
+			  			$('.result_search_user input[type="checkbox"]').attr('checked',true);
+			  			$('.result_search_user .content').text('YES');
+			  		}else{
+			  			$('.result_search_user input[type="checkbox"]').attr('checked',false);
+			  			$('.result_search_user .content').text('NO');
+			  		}
+
+			  		$('.result_search_user #username').text(response.username);
+			  		$('.result_search_user #email').text(response.email);
+			  		$('.result_search_user #bday').text(response.birthdate);
+			  		$('.result_search_user #phone').text(response.phone);
+			  		$('.result_search_user #country').text(response.country);
+			  		$('.result_search_user #numBox').text(response.numBox);
+			  		$('.result_search_user #maxBox').val(response.maxBox);
+
+			  		$('.result_search_user img').attr('src',response.profilePic);
 
 			  	}
 			  },
@@ -169,19 +313,43 @@ $("#isAdmin").on("click", function(){
 		});
 });
 
-$(".result_search button").on("click",function(){
+$(".result_search_user button").on("click",function(){
 
-	var maxBox_value = $('#maxBox').val();
-	email = $('#email').text();
+	var maxBox_value = $('.result_search_user #maxBox').val();
+	email = $('.result_search_user #email').text();
 	var data = {'maxBox':maxBox_value, 'email':email};
 
 	$.ajax({
 		url: "/admin/AddNumberOfBox",
 			  type: "POST", //send it through get method
 			  data: data,
-			  
+		  
 			  success: function(response) {
 			  //	alert(response.status);
+			},
+			error: function(xhr) {}
+		});
+});
+
+
+$(".result_search button").on("click",function(){
+
+	var boxname_value = $('#result_box_val').val();
+	
+
+	var data = {'boxName': old_label,'newName':boxname_value};
+
+	$.ajax({
+		url: "/admin/changeBoxName",
+			  type: "POST", //send it through get method
+			  data: data,
+			  
+			  success: function(response) {
+			  	if(response.status=="no_error"){
+			  		$('#result_box_val').val(" ");
+			  	}else{
+			  		alert("Error");
+			  	}
 			},
 			error: function(xhr) {}
 		});

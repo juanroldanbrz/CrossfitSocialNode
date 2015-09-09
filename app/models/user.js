@@ -26,10 +26,12 @@ var UserSchema = new mongoose.Schema({
     phone: String,
     maxBox: { type : Number, default: 1 },
     numBox: { type : Number, default: 0 },
+    currentBox: String,
     country : String,
     lastTry : { type : Date, default: Date.now },
     numOfTrys: { type : Number, default: 0 },
     countryFlag: String,
+    isVerified: {type:Boolean,default:false},
     isOwner: { type : Boolean, default: false },
     favorites: [ mongoose.Schema.Types.ObjectId ], //Array of favorite friends User._id
     about_crossfit : mongoose.Schema.Types.ObjectId, //Reference to AboutCrossfit._id
@@ -60,6 +62,24 @@ UserSchema.methods.generateHash = function(password) {
 
 UserSchema.methods.validPassword = function(password) {
     return bcrypt.compareSync(password, this.password);
+};
+
+
+UserSchema.methods.getAge = function() {
+    var user = this;
+    var cDate= new Date();
+    var year = cDate.getFullYear();
+    var month = cDate.getMonth();
+    var day = cDate.getDay();
+    var date1 = user.birthdate;
+    var date2 = year+'-'+month+'-'+day;
+    var dateParts1 = date1.split('-')
+        , dateParts2 = date2.split('-')
+        , d1 = new Date(dateParts1[0], dateParts1[1]-1, dateParts1[2])
+        , d2 = new Date(dateParts2[0], dateParts2[1]-1, dateParts2[2])
+
+    return new Date(d2 - d1).getYear() - new Date(0).getYear() ;
+
 };
 
 

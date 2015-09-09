@@ -1,26 +1,127 @@
 <div id="feed_panel" class="tab-content">
-	<div class="col_6" style="float:right;">
+	<div class="col_7" style="float:right;">
 
 		<div class="col_12" style="background-color:#2d2b2a;padding:5px">
-			Feed
+			My boxes
 		</div>
 
-		<div class="result">
-			<ul class="feed-list">
-				<li>
-					<img src="/img/profile/55e5b8294c261c170b500cb2"/>
-					<strong style="">Adrian Perez</strong><br>
-					<small>Se ha subscrito al box <strong>Prueba</strong> hace 30 min</small>
-				</li>
+		<div class="col_12 view">
+			<img src="/img/banner_parallax.jpg" style="width:100%;margin-top:-10px;" />
+			<div class="col_4">
+				<img src="/img/profile.jpg">
+				<button style="position:absolute;top:0;width:120px;padding:5px;right:10px;">Follow this box</button>
+				<h2>Name box</h2>
+				<h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget</h3>
 
-				<li>
-					<img src="/img/profile/55e442bb642da34f1d86eed2"/>
-					<strong style="">Juan Bermudez</strong><br>
-					<small>Se ha subscrito al box <strong>Prueba</strong> hace 10 min</small>
-				</li>
+			</div>
+			<div class="box-menu">
+				<ul class="tabs right">
+					<li class="normal"><a href="#my_box_home"><i class="fa fa-home"></i> HOME</a></li>
+					<li class="normal"><a href="#my_box_members" id="list_members"><i class="fa fa-user"></i> MEMBERS</a></li>
+					<li class="normal"><a href="#my_box_training" id="my_box"><i class="fa fa-user"></i> TRAINING</a></li>
+				</ul>
+			</div>
 
-			</ul>
+
 		</div>
-		
+
+		<!-- CONTENT -->
+
+		<div id="my_box_home" class="tab-content">
+			<div class="col_12" style="float:right;margin-top:10px">
+				<div class="col_12">
+					<div class="col_12" style="background-color:#2d2b2a;padding:5px">
+						Home
+					</div>
+					<ul class="feed-list">
+						<li>
+							<img src="/img/profile/55e5b8294c261c170b500cb2">
+							<strong style="">Adrian Perez</strong><br>
+							<span style="float:right;font-size:.8em;">08/09/2015</span>
+							<small>ha publicado un nuevo artículo <strong>Cómo comenzar/Primeros entrenamientos</strong></small>
+						</li>
+
+						<li>
+							<img src="/img/profile/55e442bb642da34f1d86eed2">
+							<strong style="">Juan Bermudez</strong><br>
+							<span style="float:right;font-size:.8em;">08/09/2015</span>
+							<small>ha publicado un nuevo artículo <strong>Cómo comenzar/Primeros entrenamientos</strong></small>
+						</li>
+
+					</ul>
+				</div>
+
+			</div>
+		</div>
+
+
+		<div id="my_box_members" class="tab-content">
+			<div class="col_12" style="float:right;margin-top:10px">
+				<div class="col_12">
+					<div class="col_12" style="background-color:#2d2b2a;padding:5px">
+						Members
+					</div>
+					<ul class="members-list">
+						
+					</ul>
+				</div>
+
+			</div>
+		</div>
+
+
+		<div id="my_box_training" class="tab-content">
+			<div class="col_12" style="float:right;margin-top:10px">
+				<div class="col_12">
+					<div class="col_12" style="background-color:#2d2b2a;padding:5px">
+						Training
+					</div>
+
+					<div class="center col_12">
+						<select>
+							<option>08/09/2015</option>
+						</select>
+					</div>
+
+					<div class="col_12" style="background-color:#2d2b2a;padding:5px">
+						Strenght
+					</div>
+
+					<div class="col_12 traing center">
+						<div class="col_4">
+							<p>SET 1</p>
+						</div>
+						<div class="col_4">
+							<p>5 rounds</p>
+						</div>
+						<div class="col_4">
+							<p>10'</p>
+						</div>
+					</div>
+					<div class="col_12 traing center">
+						<div class="col_4">
+							<p>Black Squat</p>
+						</div>
+						<div class="col_4">
+							<p>3</p>
+						</div>
+						<div class="col_4">
+							<p>70% RM</p>
+						</div>
+					</div>
+					<div class="col_12">
+						<div class="col_6">
+							<button>POST</button>
+						</div>
+						<div class="col_6">
+							<button>NO POST</button>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
 	</div>
+
 </div>
