@@ -18,10 +18,12 @@
 			<h3>Change password</h3>
 			<div>
 				<form id="edit">
+					
 					<input type="password" name="oldPassword" id="oldPassword"placeholder="Old password" />
 					<input type="password" name="newPassword" id="newPassword" placeholder="New password" />
 					<input type="password" name="newPassword2" placeholder="Repeat new password" id="newPassword2"/>
 					<button type="button" class="md-close">SEND</button>
+					
 				</form>
 			</div>
 		</div>
@@ -32,7 +34,7 @@
 
 	<%- include loggedIn/partials/header.ejs %>
 
-	<div class="col_12 column aside_main" >
+	<div class="col_12 column aside_main hide-phone" >
 
 		<!-- ASIDE -->	
 		<%- include loggedIn/partials/aside.ejs %>

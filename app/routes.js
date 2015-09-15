@@ -7,6 +7,8 @@ module.exports = function(app, passport) {
 	require('./routeControllers/profile')(app,passport);
 	require('./routeControllers/admin')(app);
 	require('./routeControllers/box')(app);
+	require('./routeControllers/trainings')(app);
+
 
 
 	// =====================================

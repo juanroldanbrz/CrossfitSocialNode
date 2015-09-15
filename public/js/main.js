@@ -1,4 +1,8 @@
 ﻿$(document).ready(function() {
+	
+	var isOwner;
+
+	showBox();
 
 	$('.success_main').hide();
 	
@@ -42,11 +46,12 @@
 		var country_list = ["Afghanistan","Albania","Algeria","Andorra","Angola","Anguilla","Antigua &amp; Barbuda","Argentina","Armenia","Aruba","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bermuda","Bhutan","Bolivia","Bosnia &amp; Herzegovina","Botswana","Brazil","British Virgin Islands","Brunei","Bulgaria","Burkina Faso","Burundi","Cambodia","Cameroon","Cape Verde","Cayman Islands","Chad","Chile","China","Colombia","Congo","Cook Islands","Costa Rica","Cote D Ivoire","Croatia","Cruise Ship","Cuba","Cyprus","Czech Republic","Denmark","Djibouti","Dominica","Dominican Republic","Ecuador","Egypt","El Salvador","Equatorial Guinea","Estonia","Ethiopia","Falkland Islands","Faroe Islands","Fiji","Finland","France","French Polynesia","French West Indies","Gabon","Gambia","Georgia","Germany","Ghana","Gibraltar","Greece","Greenland","Grenada","Guam","Guatemala","Guernsey","Guinea","Guinea Bissau","Guyana","Haiti","Honduras","Hong Kong","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Isle of Man","Israel","Italy","Jamaica","Japan","Jersey","Jordan","Kazakhstan","Kenya","Kuwait","Kyrgyz Republic","Laos","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Macau","Macedonia","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Mauritania","Mauritius","Mexico","Moldova","Monaco","Mongolia","Montenegro","Montserrat","Morocco","Mozambique","Namibia","Nepal","Netherlands","Netherlands Antilles","New Caledonia","New Zealand","Nicaragua","Niger","Nigeria","Norway","Oman","Pakistan","Palestine","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland","Portugal","Puerto Rico","Qatar","Reunion","Romania","Russia","Rwanda","Saint Pierre &amp; Miquelon","Samoa","San Marino","Satellite","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","South Africa","South Korea","Spain","Sri Lanka","St Kitts &amp; Nevis","St Lucia","St Vincent","St. Lucia","Sudan","Suriname","Swaziland","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Timor L'Este","Togo","Tonga","Trinidad &amp; Tobago","Tunisia","Turkey","Turkmenistan","Turks &amp; Caicos","Uganda","Ukraine","United Arab Emirates","United Kingdom","Uruguay","Uzbekistan","Venezuela","Vietnam","Virgin Islands (US)","Yemen","Zambia","Zimbabwe"];
 		
 		$.each(country_list, function(val, text) {
-			$('select').append(
+			$('#country').append(
 				$('<option></option>').val(val).html(text)
 				);  
-		});
+		});	
 	}
+
 
 	function createBoxAjax() {
 		$.ajax({
@@ -75,44 +80,16 @@
 		});
 	}
 
-	/*function showListBoxes(){
+	$('#modal-8 button').on("click", function(){
+		$('#modal-8').removeClass('md-show');
+		$('#modal-8').addClass('md-hide');
+	});
+
+
+	$( ".suplements a" ).on( "click", function() {
 
 		$.ajax({
-			url: "/box/myBoxes",
-			type: "POST",
-
-			success: function(response) {
-
-				if(response.status == "no_error"){
-
-					$('.ul_list').empty();
-
-					for(var i=0;i< response.data.length;i++){
-
-						var list = "<li class='list-itm' id='"+response.data[i].id+"'><img src='"+response.data[i].boxPicture+"' alt=''/><p>Name: "
-						+response.data[i].name+"</p><p>Tariffs:"+response.data[i].tariffs+"</p><button><i class='fa fa-cog'></i> Modify box</button><button class='training'><i class='fa fa-remove'></i> Training</button><button><i class='fa fa-remove'></i> Delete box</button></li></li>";
-
-						$('.ul_list').append(list);
-					}
-
-				}
-
-
-			},
-			error: function(xhr) {}
-		});
-}*/
-
-$('#modal-8 button').on("click", function(){
-	$('#modal-8').removeClass('md-show');
-	$('#modal-8').addClass('md-hide');
-});
-
-
-$( ".suplements a" ).on( "click", function() {
-
-	$.ajax({
-		url: "/profile/suplements",
+			url: "/profile/suplements",
 			  type: "POST", //send it through get method
 			  // data: data,
 			  processData: false,
@@ -143,7 +120,7 @@ $( ".suplements a" ).on( "click", function() {
 			  	//Algo falló
 			  }
 			});
-});
+	});
 
 
 $( ".benchmark a" ).on( "click", function() {
@@ -528,19 +505,364 @@ $('#list_members').on("click",function(){
 		//data: data,
 		success: function(response) {
 			
-			 if(response.status=="no_error"){
+			if(response.status=="no_error"){
 				$('.members-list').empty();
 
 				for(var i=0;i< response.data.length;i++){
+					isVerified = response.data[i].isVerified;
 
-					var list = "<li><img src="+response.data[i].profilePic+"><strong>"+response.data[i].fullName+"</strong><small>, "+response.data[i].age+" años</small><br><i style='color:#888' class='fa fa-map-marker'></i><small>"+response.data[i].country+"</small></li>";
+					if(!window.isOwner && isVerified)
+						var list = "<li><img src="+response.data[i].profilePic+"><strong id="+response.data[i].id+">"+response.data[i].fullName+"</strong><small>, "+response.data[i].age+" años</small><span class='right_panel'><i class='fa fa-check green_v'></i><small>User verified</small><br></span><br><i style='color:#888' class='fa fa-map-marker'></i><small>"+response.data[i].country+"</small></li>";
+					else if (!window.isOwner)
+						var list = "<li><img src="+response.data[i].profilePic+"><strong id="+response.data[i].id+">"+response.data[i].fullName+"</strong><small>, "+response.data[i].age+" años</small><span class='right_panel'><i class='fa fa-remove red_v'></i><small>User not verified</small><br></span><br><i style='color:#888' class='fa fa-map-marker'></i><small>"+response.data[i].country+"</small></li>";
+
+					else if(isVerified){
+						var list = "<li><img src="+response.data[i].profilePic+"><strong id="+response.data[i].id+">"+response.data[i].fullName+"</strong><small>, "+response.data[i].age+" años</small><span class='right_panel'><i class='fa fa-check green_v'></i><small>User verified</small><br><button>KICK</button><button id='btn_unverify'>UNVERIFY</button></span><br><i style='color:#888' class='fa fa-map-marker'></i><small>"+response.data[i].country+"</small></li>";
+					}else{
+						var list = "<li><img src="+response.data[i].profilePic+"><strong id="+response.data[i].id+">"+response.data[i].fullName+"</strong><small>, "+response.data[i].age+" años</small><span class='right_panel'><i class='fa fa-remove red_v'></i><small>User not verified</small><br><button>KICK</button><button id='btn_verify'>VERIFY</button></span><br><i style='color:#888' class='fa fa-map-marker'></i><small>"+response.data[i].country+"</small></li>";
+					}
 					$('.members-list').append(list);
 				}
 			}
-					},
-					error: function(xhr) {}
-				});
+		},
+		error: function(xhr) {}
+	});
+
+});
+
+
+$('.members-list').on('click','#btn_verify',function(){
+	
+	var $this = $(this);
+	var id = $this.parents('li').find('strong').attr('id');
+	var data = {'id':id};
+
+	$.ajax({
+		url: "/box/user/verify",
+		type: "POST",
+		data: data,
+		success: function(response) {
+			
+			if(response.status == 'no_error'){
+				
+				$this.parents('li').find('.right_panel i').removeClass('fa-remove').addClass('fa-check');
+				$this.parents('li').find('.right_panel i').removeClass('red_v').addClass('green_v');
+				$this.parents('li').find('.right_panel small').text("User verified");
+				$this.parents('li').find('#btn_verify').attr('id','btn_unverify');
+				$this.parents('li').find('#btn_verify').text("UNVERIFY");
+
+			}
+		},
+		error: function(xhr) {}
+	});
+});
+
+
+$('.members-list').on('click','#btn_unverify',function(){
+	
+	var $this = $(this);
+	var id = $this.parents('li').find('strong').attr('id');
+	var data = {'id':id};
+
+	$.ajax({
+		url: "/box/user/unverify",
+		type: "POST",
+		data: data,
+		success: function(response) {
+			
+			if(response.status == 'no_error'){
+				
+				$this.parents('li').find('.right_panel i').removeClass('fa-check').addClass('fa-remove');
+				$this.parents('li').find('.right_panel i').removeClass('green_v').addClass('red_v');
+				$this.parents('li').find('.right_panel small').text("User no verified");
+				$this.parents('li').find('#btn_unverify').attr('id','btn_verify');
+				$this.parents('li').find('#btn_verify').text("VERIFY");
+
+			}
+		},
+		error: function(xhr) {}
+	});
+});
+function showBox(){
+	$.ajax({
+		url: "/box/currentBox",
+		type: "POST",
+
+		success: function(response) {
+			if(response.status == "no_error"){
+				$('#picture_box').attr('src',response.box.boxPicture);
+				$('#name_box').text(response.box.name);
+				$('#members_box').text(response.box.members+" members");
+				//$('#description_box').text(response.box.description);
+				$('#description_box').text("Este bloque mostrará una breve información acerca del box");
+				
+				$('#city_box').text(response.box.address+", "+response.box.city+" ("+response.box.country+") ");
+
+				if(response.box.isOwner){
+					window.isOwner = true;
+					$('.create_training').show();
+				}else{
+					window.isOwner = false;
+					$('.create_training').hide();
+				}
+				
+				//tariffs
+				
+				//address
+				
+			}
+		},
+		error: function(xhr) {}
+	});
+}
+
+$('.current_box').on('click',function(){
+	showBox();
+});
+
+
+$('#add').on('click',function(){
+
+	// var set = '<li id="set"><div class="col_12"><div class="col_8"><input type="text" value="SET #1" id="input_set"></div><div class="col_4"></div></div><div class="col_12"><textarea class="txt-area" placeholder="Info (Optional)" id="input_info_set"></textarea></div><div class="exc"><div id="exercise_0"><div class="col_12"><p>Configure excercise</p>	</div><div class="col_8"><select id="input_select"></select></div><div class="col_4"></div><div class="col_12"><textarea class="txt-area" placeholder="Info (Optional)" id="input_info_exc"></textarea></div><div class="col_12" id="template_ex"></div><div class="col_8"></div><div class="col_4"><button id="add_exc">Add excercise</button><button id="remove_exc">Remove excercise</button></div></li>';
+	// //template excercise(template_ex)
+	// var excercise_tmp = '<div class="col_12"><input type="text" placeholder="Name " id="input_name_exc" disabled><input type="number" placeholder="Value" id="input_value_exc"><strong id="input_measure">Kg/m</strong></div><div id="others_tmp"></div></div></div>';
+	// //template others (others_tmp)
+	// var other_tmp = '<div class="col_12 others" id="others_status"><input type="text" style="margin-left:40px;" placeholder="Name others" disabled id="input_name_others" /><input type="number" style="padding:0;padding-left:5px" placeholder="Value" id="input_value_others"><strong id="input_measure_others">Kg/m</strong></div>';
+	// $("#ul_training").append(set);
+	// //$("#template_ex").append(excercise_tmp);
+	// //$("#others_tmp").append(other_tmp);
+
+	// //
+
+
+
+	// $.ajax({
+	// 	url: "/trainings/getExerciseList",
+	// 		type: "POST", //send it through get method
+
+	// 		success: function (response) {
+	// 			if(response.status == 'no_error'){
+	// 				window.exerciseList = response.data;
+	// 				for(var i=0;i< response.data.length;i++){
+	// 					$('#input_select').append(
+	// 						$('<option></option>').val(i).html(response.data[i].exerciseName)
+	// 						);
+	// 				}		
+
+
+	// 			}
+	// 		},
+	// 		error: function (xhr) {
+	// 		}
+
+	// 	});
+
+
+
+});
+
+$('#remove').on('click',function(){
+	if($( "#ul_training li" ).size() > 1){
+		$('#ul_training li:last').remove();
+
+	}
+});
+$('#ul_training').on('click','#add_exc',function(){
+	var $this = $(this);	
+	var template = $this.parents('li').find('.exc');
+	//var content = '<div id="exercise_0"><div class="col_12"></div><div class="col_8"><select><option id="one">Excercise</option></select></div><div class="col_4"></div><div class="col_12"><textarea class="txt-area" placeholder="Info (Optional)"></textarea></div><div class="col_12"><input type="number" placeholder="Name " disabled><input type="number" placeholder="Value"><strong>Kg/m</strong></div><div class="col_12 others"><input type="text" style="margin-left:40px;height:30px;" placeholder="Name others" disabled /><input type="number" style="height:30px;padding:0;padding-left:5px" placeholder="Value"><strong>Kg/m</strong></div></div>';
+	var content = '<div id="exercise_0"><div class="col_12"><p>Configure excercise</p>	</div><div class="col_8"><select id="input_select_'+currentExercise+'-'+currentSet+'"></select></div><div class="col_4"></div><div class="col_12"><textarea class="txt-area" placeholder="Info (Optional)" id="input_info_exc"></textarea></div><div class="col_12" id="template_ex_'+currentExercise+'-'+currentSet+'"></div>';
+	$(template).append(content);
+	addExerciseToList();
+
+});
+
+$('#ul_training').on('click','#remove_exc',function(){
+	if($('#ul_training li #excercise_0').length > 1){
+		$('#exercise_0:last').remove();
+	}
+
+	
+});
+
+
+$('#save_all').on('click',function(){
+
+//input_max_people
+//input_level
+//input_date
+//input_textarea_training
+
+//input_set, input_info_set , input_select, input_info_exc
+//input_name_exc, input_value_exc
+//input_measure
+
+//input_name_others
+//input_value_others
+//input_measure_others
+
+var t_maxpeople = $('#input_max_people').val();
+var t_input_level = $('#input_level').val();
+var t_date = $('#input_date').val();
+var t_info = $('#input_textarea_training').val();
+
+var t_set = $('#input_set').val();
+var t_info_set = $('#input_info_set').val();
+var t_select = $('#input_select').val();
+var t_info_exc = $('#input_info_exc').val();
+
+var t_name_exc = $('input_name_exc').val();
+var t_value_exc = $('#input_value_exc').val();
+var t_input_measure = $('input_measure').text();
+
+var t_name_others = $('input_name_others').val();
+var t_value_others = $('input_value_others').val();
+var t_measure_others = $('input_measure_others').text();
+
+//var data = {'maxPeople':t_maxpeople,'level':t_input_level,'date':t_date,'description':t_info,sets:['name':t_set,'info':t_info_set,exercises:['id','value':t_value_exc,'info':t_info_exc,others:['id','name':t_name_others,'measure':t_measure_others]]]};
+$.ajax({
+	url: "/profile",
+			  type: "POST", //send it through get method
+			 //  data: data,
+			 processData: false,
+			 contentType: false,
+			 success: function(response) {
+
+
+
+
+			 },
+			 error: function(xhr) {
+			  	//Algo falló
+			  }
+			});
 
 });
 
 });
+var input_tmp=0;
+var currentExercise=0;
+var currentSet = 0;
+var first = true;
+$('.create_training').on('click',function(){
+	var set = '<li id="set"><div class="col_12"><div class="col_8"><input type="text" value="SET #1" id="input_set"></div><div class="col_4"></div></div><div class="col_12"><textarea class="txt-area" placeholder="Info (Optional)" id="input_info_set"></textarea></div><div class="exc"><div id="exercise_0"><div class="col_12"><p>Configure excercise</p>	</div><div class="col_8"><select id="input_select_'+currentExercise+'-'+currentSet+'"></select></div><div class="col_4"></div><div class="col_12"><textarea class="txt-area" placeholder="Info (Optional)" id="input_info_exc"></textarea></div><div class="col_12" id="template_ex_'+currentExercise+'-'+currentSet+'"></div><div class="col_8"></div><div class="col_4"><button id="add_exc">Add excercise</button><button id="remove_exc">Remove excercise</button></div></li>';
+	$("#ul_training").append(set);
+
+
+	if(first){
+		$.ajax({
+			url: "/trainings/getExerciseList",
+			type: "POST", //send it through get method
+			success: function (response) {
+			if(response.status == 'no_error'){
+			window.exerciseList = response.data;
+				addExerciseToList();
+			}
+		},
+			error: function (xhr) {
+			}
+
+			});
+	}
+
+	else addExerciseToList();
+
+
+
+
+
+});
+
+function addExerciseToList(){
+	var excercise_tmp = '<div class="col_12"><input type="text" placeholder="Name "  disabled><input type="number" placeholder="Value" ><strong>Kg/m</strong></div><div id="others_tmp"></div></div></div>';
+	//template others (others_tmp)
+	var other_tmp = '<div class="col_12 others" id="others_status"><input type="text" style="margin-left:40px;" placeholder="Name others" disabled /><input type="number" style="padding:0;padding-left:5px" placeholder="Value" ><strong>Kg/m</strong></div>';
+	$("#template_ex_"+currentExercise+'-'+currentSet).append(excercise_tmp);
+	for(var i=0;i< window.exerciseList.length;i++){
+		$('#input_select_'+currentExercise+'-'+currentSet).append(
+			$('<option></option>').val(i).html(window.exerciseList[i].exerciseName)
+		);
+	}
+
+	$('#input_select_'+currentExercise+'-'+currentSet).change(function(){
+		var selected_id =$(this).find("option:selected").attr("value");
+		$(this).parents("div#exercise_0").find("#template_ex_"+$(this).attr("id").split("_")[2]+" #others_tmp").empty();
+		$(this).parents("div#exercise_0").find("#template_ex_"+$(this).attr("id").split("_")[2]+" .col_12 input")[0].value = window.exerciseList[selected_id].exerciseName;
+		$(this).parents("div#exercise_0").find("#template_ex_"+$(this).attr("id").split("_")[2]+" .col_12 strong")[0].textContent = window.exerciseList[selected_id].measure;
+
+		//$('#input_name_exc').val(window.exerciseList[selected_id].exerciseName);
+		for(var i=0;i< window.exerciseList[selected_id].others.length;i++) {
+			$(this).parents("div#exercise_0").find("#template_ex_"+$(this).attr("id").split("_")[2]+" #others_tmp").append(other_tmp);
+			$(this).parents("div#exercise_0").find("#template_ex_"+$(this).attr("id").split("_")[2]+" #others_tmp").children().last().find("input")[0].value = window.exerciseList[selected_id].others[i].name;
+			$(this).parents("div#exercise_0").find("#template_ex_"+$(this).attr("id").split("_")[2]+" #others_tmp").children().last().find("strong")[0].textContent = window.exerciseList[selected_id].others[i].measure;
+
+			//var cSize = $("#others_tmp").children().length();
+			//$("#others_tmp").children()[cSize-1].
+			//$('#input_name_others').val(window.exerciseList[selected_id].others[i].name)
+			//$('input_measure_others').text(window.exerciseList[selected_id].others[i].measure);
+		}
+	});
+	currentExercise++;
+	first = false;
+
+
+}
+
+function sendTraining(){
+	for(var i=0;i<currentExercise;i++){
+		var exerciseId = window.exerciseList[parseInt($("div#exercise_0 #input_select_1-0 option:selected").attr("value"))].id;
+		var exerciseValue = $("div#exercise_0 #template_ex_1-0 .col_12 input")[1].value
+		//Ahora con los others:
+		for(var j=0;j< $("div#exercise_0 #template_ex_1-0 #others_tmp").children().length; j++){
+			otherValue = $("div#exercise_0 #template_ex_1-0 #others_tmp").children()[j][1].value
+		}
+
+	}
+}
+/*
+ for(var i=0;i< window.exerciseList.data.length;i++){
+ $('#input_select').append(
+ $('<option></option>').val(i).html(window.exerciseList[i].exerciseName)
+ );
+ }
+ $('#input_select').change(function(){
+ var selected_id = $('#input_select option:selected').attr("value");
+ $(this).parents("div#exercise_0").find("#template_ex #others_tmp").empty();
+ $(this).parents("div#exercise_0").find("#template_ex .col_12 input")[0].value = window.exerciseList[selected_id].exerciseName;
+ $(this).parents("div#exercise_0").find("#template_ex .col_12 strong")[0].textContent = window.exerciseList[selected_id].measure;
+
+ //$('#input_name_exc').val(window.exerciseList[selected_id].exerciseName);
+ for(var i=0;i< window.exerciseList[selected_id].others.length;i++) {
+ $(this).parents("div#exercise_0").find("#template_ex #others_tmp").append(other_tmp);
+ $(this).parents("div#exercise_0").find("#template_ex #others_tmp").children().last().find("input")[0].value = window.exerciseList[selected_id].others[i].name;
+ $(this).parents("div#exercise_0").find("#template_ex #others_tmp").children().last().find("strong")[0].textContent = window.exerciseList[selected_id].others[i].measure;
+
+ //var cSize = $("#others_tmp").children().length();
+ //$("#others_tmp").children()[cSize-1].
+ //$('#input_name_others').val(window.exerciseList[selected_id].others[i].name)
+ //$('input_measure_others').text(window.exerciseList[selected_id].others[i].measure);
+ }
+ });
+
+var data = {'maxPeople':t_maxpeople,'level','date','description':asd, sets:['name':,'info':,exercises:['id','value','info',others:['id','name','measure']]]};
+
+sets => [{
+	name: "",
+	type: "",
+	info: "",
+	exercises: [
+					id: "128xas8j",
+					value: 12,
+					others: [12,"abc",12],
+					info: ""
+	]
+}] 
+
+maxPeople
+level
+description
+date
+
+
+
+*/

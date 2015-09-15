@@ -6,23 +6,27 @@
 		</div>
 
 		<div class="col_12 view">
-			<img src="/img/banner_parallax.jpg" style="width:100%;margin-top:-10px;" />
+
 			<div class="col_4">
-				<img src="/img/profile.jpg">
-				<button style="position:absolute;top:0;width:120px;padding:5px;right:10px;">Follow this box</button>
-				<h2>Name box</h2>
-				<h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget</h3>
-
+				<img id="picture_box" src="" alt=""/>
+				<button id="members_box"></button>
+				<h2 id="name_box"></h2>
+				<span><i class="fa fa-map-marker"></i><h4 id="city_box"></h4></span>
+				<h3 id="description_box"></h3>
+				
 			</div>
-			<div class="box-menu">
-				<ul class="tabs right">
-					<li class="normal"><a href="#my_box_home"><i class="fa fa-home"></i> HOME</a></li>
-					<li class="normal"><a href="#my_box_members" id="list_members"><i class="fa fa-user"></i> MEMBERS</a></li>
-					<li class="normal"><a href="#my_box_training" id="my_box"><i class="fa fa-user"></i> TRAINING</a></li>
-				</ul>
-			</div>
+			
 
 
+		</div>
+
+		<div class="box-menu">
+			<ul class="tabs right">
+				<li class="normal"><a href="#my_box_home"><i class="fa fa-home"></i> HOME</a></li>
+				<li class="normal"><a href="#my_box_members" id="list_members"><i class="fa fa-user"></i> MEMBERS</a></li>
+				<li class="normal"><a href="#my_box_training" id="my_box"><i class="fa fa-user"></i> TRAINING</a></li>
+				<li class="red create_training"><a href="#create_training"><i class="fa fa-user"></i> CREATE TRAINING</a></li>
+			</ul>
 		</div>
 
 		<!-- CONTENT -->
@@ -50,9 +54,9 @@
 
 					</ul>
 				</div>
-
 			</div>
 		</div>
+		
 
 
 		<div id="my_box_members" class="tab-content">
@@ -122,6 +126,56 @@
 
 			</div>
 		</div>
-	</div>
 
+		<!-- CREATE TRAINING -->
+		<div id="create_training" class="tab-content">
+			<div class="col_12" style="float:right;margin-top:10px">
+				<div class="col_12">
+					<div class="col_12" style="background-color:#2d2b2a;padding:5px">
+						Create training
+					</div>
+					<div class="col_12">
+						
+						<p>Configure training</p>
+						<div class="col_4">
+							<input type="number" placeholder="Max people" id="input_max_people">
+						</div>
+						<div class="col_4">
+							<input type="number" placeholder="Level" id="input_level">
+						</div>
+						<div class="col_4">
+							<input type="date" id="input_date" />
+						</div>
+						<div class="col_12">
+							<textarea class="txt-area" id="input_textarea_training" placeholder="Description"></textarea>
+						</div>
+
+					</div>
+					<div class="col_12">
+						<div class="col_8">
+							<p>Configure sets</p>
+						</div>
+						<div class="col_4">
+							<div class="col_6">
+								<button id="add">Add set</button>
+							</div>
+							<div class="col_6">
+								<button id="remove">Remove set</button>
+							</div>
+						</div>
+					</div>
+					<!-- ENTRENAMIENTOS -->
+					<ul id="ul_training"></ul>
+					<button id='save_all'>SAVE ALL</button>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
+
+
+
+
+
+
+

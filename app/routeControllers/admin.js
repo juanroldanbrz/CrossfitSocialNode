@@ -7,6 +7,7 @@ var middleware = require('../middleware/adminMiddleware.js')
 var User = require('../models/user');
 var formValidator = require('../utils/formValidator.js');
 var Box = require('../models/box');
+var setTemplate = require('../models/exercise/exerciseTemplate');
 
 module.exports = function(app) {
     app.get('/admin', function (req, res) {
@@ -28,6 +29,44 @@ module.exports = function(app) {
 
     app.get('/admin/main',middleware.isAdminLogged,function (req, res) {
         res.render('gym/admin/main');
+    });
+
+
+    app.post('/admin/addExercise',middleware.isAdminLogged,function (req, res) {
+        if(formValidator.isAValidInput(req,['name','measure'])){
+            //validate input
+            setTemp = new setTemplate();
+            if(req.body.others != null && req.body.others!=''){
+                var inputWithoutWhiteSpaces = req.body.others.replace(/ /g, "");
+                var othersArray = inputWithoutWhiteSpaces.split(';');
+                if(othersArray.length==0)
+                    res.send({status:'error'});
+
+                var othersToSave = [];
+                for(var i=0; i<othersArray.length;i++)
+                    if(othersArray.length!=0){
+                        nameAndMeasure = othersArray[i].split(':');
+                        if(nameAndMeasure.length==2)
+                            othersToSave.push({name:nameAndMeasure[0],measure:nameAndMeasure[1]});
+
+                    }
+
+                setTemp.others = othersToSave;
+
+            }
+            setTemp.exerciseName = req.body.name;
+            setTemp.measure = req.body.measure;
+            setTemp.save(function(err){
+                if(err)
+                res.send({status:'error'});
+                else
+                res.send({status:'success'});
+            });
+
+
+
+        }
+
     });
     app.post('/admin/addNumberOfBox',middleware.isAdminLogged,function (req, res) {
         if(formValidator.isAValidInput(req,['email','maxBox']) && !isNaN(req.body.maxBox))

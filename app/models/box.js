@@ -36,6 +36,36 @@ UserSchema.methods.removeMember = function(uid) {
 
 };
 
+UserSchema.methods.isVerified = function(uid) {
+    var box = this;
+    for(var i=0;i<box.members.length;i++)
+        if ((box.members[i].user.toHexString() == uid))
+            return(box.members[i].isVerified);
+
+
+};
+
+UserSchema.methods.verify = function(uid) {
+    var box = this;
+    for(var i=0;i<box.members.length;i++)
+    {
+        if ((box.members[i].user.toHexString() == uid)){
+            box.members[i].isVerified = true;
+            break;
+        }
+    }
+
+};
+
+UserSchema.methods.unVerify = function(uid) {
+    var box = this;
+    for(var i=0;i<box.members.length;i++)
+        if ((box.members[i].user.toHexString() == uid)){
+            box.members[i].isVerified = false;
+            break;
+        }
+};
+
 UserSchema.methods.addMember = function(uid,verified) {
     if(verified ==null) verified = false;
     var box = this;

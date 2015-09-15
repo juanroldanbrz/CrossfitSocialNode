@@ -141,8 +141,10 @@ module.exports = function(app) {
                     else if (!myBox)
                         res.send({status: 'error'});
                     else {
-                        req.user.currentBox = myBox._id;
+                        req.user.currentBox = req.body.id;
                         myBox.addMember(req.user._id);
+                        if(myBox.owner.toHexString() == req.user._id)
+                            myBox.verify(req.user._id);
                         myBox.save(function (err) {
                             User.findById(req.user._id, function (err, user) {
                                 if (err)
@@ -201,6 +203,8 @@ module.exports = function(app) {
                     if (err)
                         res.send({status: 'error'});
                     else if (myBox) {
+                        req.user.currentBox = req.body.id;
+
                         myBox.removeMember(req.user._id);
                         myBox.save(function (err) {
                             if (err)
@@ -211,8 +215,10 @@ module.exports = function(app) {
                                 else if (!myOtherBox)
                                     res.send({status: 'error'});
                                 else {
-                                    req.user.currentBox = myOtherBox._id;
+
                                     myOtherBox.addMember(req.user._id);
+                                    if(myOtherBox.owner.toHexString() == req.user._id)
+                                        myOtherBox.verify(req.user._id);
                                     myOtherBox.save(function (err) {
                                         User.findById(req.user._id, function (err, user) {
                                             if (err)
@@ -249,7 +255,7 @@ module.exports = function(app) {
 
     app.post('/box/removeBox', ownerMiddleware.isOwnerLogged, function(req,res){
         if(formValidator.isAValidInput(req,['id'])) {
-        Box.remove({and : [{_id:req.body.id},{owner:req.user._id}]}, function(err, numberOfRemovedDocs) {
+        Box.remove({$and : [{_id:req.body.id},{owner:req.user._id}]}, function(err, numberOfRemovedDocs) {
             if(err)
                 res.send({status:'error'});
             if(numberOfRemovedDocs==1){
@@ -312,7 +318,6 @@ module.exports = function(app) {
 
     });
 
-
     app.post('/box/currentBox', boxMiddleware.isFollowingABox, function(req,res){
         Box.findById(req.user.currentBox, function(err, box) {
             if(err)
@@ -331,7 +336,8 @@ module.exports = function(app) {
                         city:box.city,
                         country:box.country,
                         address:box.address,
-                        members: box.members.length
+                        members: box.members.length,
+                        isOwner: (box.owner.toHexString() == req.user._id)
                     };
                 res.send({status:'no_error',box:data});
 
@@ -370,18 +376,26 @@ module.exports = function(app) {
                             if (box.owner.toHexString() == users[i]._id)
                                 data.unshift({
                                     isOwner: true,
+                                    isVerified: box.isVerified(users[i]._id),
+                                    id: users[i]._id,
                                     username: users[i].username,
+                                    country: users[i].country,
                                     profilePic: users[i].profilePic,
                                     fullName: users[i].fullName,
                                     age: users[i].getAge()
+
+
                                 });
                             else
                                 data.push({
                                     isOwner: false,
+                                    isVerified: box.isVerified(users[i]._id),
+                                    id: users[i]._id,
                                     username: users[i].username,
+                                    country: users[i].country,
                                     profilePic: users[i].profilePic,
                                     fullName: users[i].fullName,
-                                    age: users[i].getAge()
+                                    age: users[i].getAge(),
                                 });
 
                         res.send({status: 'no_error', data: data});
@@ -429,13 +443,54 @@ module.exports = function(app) {
 
 
 
-    app.post('/box/user/verify',loginMiddleware.isLoggedAndFullRegistered, function(req,res){
+    app.post('/box/user/verify',boxMiddleware.isFollowingABox, function(req,res){
+        if(formValidator.isAValidInput(req,['id'])){
+            //VERIFY IF THE USER IS THE OWNER
+            Box.findOne({$and : [{_id:req.user.currentBox},{owner:req.user._id}]}, function(err, box) {
+                if(err)
+                    res.send({status:'error'});
+                if(box){
+                    box.verify(req.body.id);
+                    box.save(function (err) {
+                       if(err)
+                           res.send({status:'error'});
+                        else
+                           res.send({status:'no_error'});
+                    });
+                }
+                else
+                res.send({status:'error'});
+
+            });
+        }
 
 
     });
 
-    app.post('/box/user/verify',loginMiddleware.isLoggedAndFullRegistered, function(req,res){
+    app.post('/box/user/unVerify',loginMiddleware.isLoggedAndFullRegistered, function(req,res){
+        if(formValidator.isAValidInput(req,['id'])){
+            //VERIFY IF THE USER IS THE OWNER
+            Box.findOne({$and : [{_id:req.user.currentBox},{owner:req.user._id}]}, function(err, box) {
+                if(err)
+                    res.send({status:'error'});
+                if(box) {
+                    if (req.body.id == req.user._id)  //No te puedes desverificar a ti mismo, carajo!
+                        res.send({status: 'error'});
+                    else {
+                        box.unVerify(req.body.id);
+                        box.save(function (err) {
+                            if (err)
+                                res.send({status: 'error'});
+                            else
+                                res.send({status: 'no_error'});
+                        });
+                    }
+                }
+                else
+                    res.send({status:'error'});
 
+            });
+        }
 
     });
 

@@ -12,6 +12,7 @@
 	<div class="col_12" style="margin-top:60px">
 
 		<div class="col_6">
+			<p>Search user</p>
 			<form id="search_box">
 				<input type="text" placeholder="Search user ..." id="tags" autocomplete="off">
 				<button type="button" id="search_user">SEARCH</button>	
@@ -19,6 +20,7 @@
 			</form>
 		</div>
 		<div class="col_6">
+			<p>Search box</p>
 			<form id="search_box">
 				<input type="text" placeholder="Search box ..." id="tags2" autocomplete="off">
 				<button type="button" id="search_b">SEARCH</button>	
@@ -61,10 +63,18 @@
 
 
 
-		<div class="col_12 no_user">
-			<i class="fa fa-search fa-3x"></i>
-			<p>To begin , type a user name (Username, full name, email) OR type box name (Name) in the search box on the left and press the Search button!</p>
+		<div class="col_12">
+			<p>Training</p>
+			<div class="col_8">
+				<form class="train_list">
+					<input type="text" id="name_training" placeholder="Name">
+					<input type="text" id="measure_training" placeholder="Measure">
+					<input type="text" id="others_training" placeholder="Others">
+					<button>SEND</button>
+				</form>
+			</div>
 		</div>
+
 	</div>
 
 	<script>
@@ -187,7 +197,7 @@ $('#search_b').on('click', function() {
 			  success: function(response) {
 			  	//alert(response.status);
 			  	if(response.status == "no_error"){
-			  		$('.no_user').addClass('hide');
+			  		//$('.no_user').addClass('hide');
 			  		$('.result_search').removeClass('hide');
 
 			  		for (var i = 0; i < response.data.length; i++) {
@@ -217,7 +227,7 @@ $('#search_box #search_user').on('click', function() {
 			  success: function(response) {
 			  	//alert(response.status);
 			  	if(response.status == "no_error"){
-			  		$('.no_user').addClass('hide');
+			  		//$('.no_user').addClass('hide');
 			  		$('.result_search_user').removeClass('hide');
 			  		
 			  		if(response.isOwner == true){
@@ -256,7 +266,7 @@ $('#search_box #search_user').on('click', function() {
 			  success: function(response) {
 			  	//alert(response.status);
 			  	if(response.status == "no_error"){
-			  		$('.no_user').addClass('hide');
+			  		//$('.no_user').addClass('hide');
 			  		$('.result_search_user').removeClass('hide');
 			  		
 			  		if(response.isOwner == true){
@@ -323,7 +333,7 @@ $(".result_search_user button").on("click",function(){
 		url: "/admin/AddNumberOfBox",
 			  type: "POST", //send it through get method
 			  data: data,
-		  
+
 			  success: function(response) {
 			  //	alert(response.status);
 			},
@@ -336,7 +346,6 @@ $(".result_search button").on("click",function(){
 
 	var boxname_value = $('#result_box_val').val();
 	
-
 	var data = {'boxName': old_label,'newName':boxname_value};
 
 	$.ajax({
@@ -350,9 +359,28 @@ $(".result_search button").on("click",function(){
 			  	}else{
 			  		alert("Error");
 			  	}
-			},
-			error: function(xhr) {}
-		});
+			  },
+			  error: function(xhr) {}
+			});
+});
+
+$('.train_list button').on("click",function(){
+	var get_name = $('#name_training').val();
+	var get_measure = $('#measure_training').val();
+	var get_others = $('#others_training').val();
+
+	var data = {'name':get_name,'measure':get_measure,'others':get_others};
+
+	$.ajax({
+		url: "/admin/addExercise",
+			  type: "POST", //send it through get method
+			  data: data,
+			  
+			  success: function(response) {
+			  	alert(response);
+			  },
+			  error: function(xhr) {}
+			});
 });
 
 </script>
