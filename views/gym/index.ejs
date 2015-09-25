@@ -7,7 +7,7 @@
 		<div class="md-content">
 			<h3>Login</h3>
 			<div>
-				<form id="login" action="/login" method="POST">
+				<form id="login" action="/login" method="POST" onsubmit="return validateLoginForm()">
 					<input type="text" placeholder="Username or email" name="username" style="width:100%"/>
 					<input type="password" placeholder="Password" name="password" style="width:100%;"/>
 					<a href="#" class="md-trigger md-close" data-modal="modal-6">Forgot your password? <span style="color:#EC1717">Click here!</span></a>

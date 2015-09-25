@@ -33,7 +33,7 @@ module.exports = function(app) {
 
 
     app.post('/admin/addExercise',middleware.isAdminLogged,function (req, res) {
-        if(formValidator.isAValidInput(req,['name','measure'])){
+        if(formValidator.isAValidInput(req,['name','measure','isPostable'])){
             //validate input
             setTemp = new setTemplate();
             if(req.body.others != null && req.body.others!=''){
@@ -41,6 +41,7 @@ module.exports = function(app) {
                 var othersArray = inputWithoutWhiteSpaces.split(';');
                 if(othersArray.length==0)
                     res.send({status:'error'});
+
 
                 var othersToSave = [];
                 for(var i=0; i<othersArray.length;i++)
@@ -52,6 +53,26 @@ module.exports = function(app) {
                     }
 
                 setTemp.others = othersToSave;
+
+            }
+
+            if(req.body.isPostable==true){
+                var inputWithoutWhiteSpaces = req.body.toPost.replace(/ /g, "");
+                var othersArray = inputWithoutWhiteSpaces.split(';');
+                if(othersArray.length==0)
+                    res.send({status:'error'});
+
+
+                var othersToSave = [];
+                for(var i=0; i<othersArray.length;i++)
+                    if(othersArray.length!=0){
+                        nameAndMeasure = othersArray[i].split(':');
+                        if(nameAndMeasure.length==2)
+                            othersToSave.push({name:nameAndMeasure[0],measure:nameAndMeasure[1]});
+
+                    }
+
+                setTemp.toPost = othersToSave;
 
             }
             setTemp.exerciseName = req.body.name;

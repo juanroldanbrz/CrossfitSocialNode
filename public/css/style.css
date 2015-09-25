@@ -646,144 +646,174 @@ h5 > span{
 .view{position:relative;background-image:url('/img/banner_parallax.jpg');height:350px;background-size: 100%;}
 .view .col_4 img{width:140px;height:150px;
 	position:absolute;bottom:-30px;border:3px solid #fff;border-radius: 3px;    box-shadow: 0px 3px 5px #888888;}
-.view .col_4 h2{position:absolute;z-index:999;bottom:70px;left:160px;font-size:1.3em;color:#fff;}
-.view .col_4 h3{position:absolute;z-index:999;bottom:20px;left:160px;font-size:1em;color:#ddd;width:75%;}
-.view .col_4 h4{position:absolute;z-index:999;bottom:48px;left:175px;font-size:.9em;font-weight: 400;color:#ddd;}
-.view .col_4 i{position:absolute;z-index:999;bottom:61px;left:160px;color:#ddd;font-size:.9em}
-.traing p{color:#2d2b2a;}
-#members_box{position:absolute;top:10px;width:120px;padding:5px;right:10px;}
+	.view .col_4 h2{position:absolute;z-index:999;bottom:70px;left:160px;font-size:1.3em;color:#fff;}
+	.view .col_4 h3{position:absolute;z-index:999;bottom:20px;left:160px;font-size:1em;color:#ddd;width:75%;}
+	.view .col_4 h4{position:absolute;z-index:999;bottom:48px;left:175px;font-size:.9em;font-weight: 400;color:#ddd;}
+	.view .col_4 i{position:absolute;z-index:999;bottom:61px;left:160px;color:#ddd;font-size:.9em}
+	.traing p{color:#2d2b2a;}
+	#members_box{position:absolute;top:10px;width:120px;padding:5px;right:10px;}
 
-#separator-quotes {
-	background-position: center 0%;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-image: url('/img/banner_parallax.jpg');
+	#separator-quotes {
+		background-position: center 0%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-image: url('/img/banner_parallax.jpg');
 
-	width: 100%;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	vertical-align: middle;
-	z-index: 1;
-	color: #fff;
-}
+		width: 100%;
+		overflow-x: hidden;
+		overflow-y: hidden;
+		vertical-align: middle;
+		z-index: 1;
+		color: #fff;
+	}
 
-#separator-quotes2 {
-	background-position: center 0%;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-image: url('/img/banner_parallax2.jpg');
+	#separator-quotes2 {
+		background-position: center 0%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-image: url('/img/banner_parallax2.jpg');
 
-	width: 100%;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	vertical-align: middle;
-	z-index: 1;
-	color: #fff;
-}
-.right_panel{float:right;text-align:right}
-.package{
-	margin-bottom:60px;
-}
-#separator-quotes .no-margin, #separator-quotes2 .no-margin{position:relative;margin-top:-10px;margin-bottom:-9px;}
+		width: 100%;
+		overflow-x: hidden;
+		overflow-y: hidden;
+		vertical-align: middle;
+		z-index: 1;
+		color: #fff;
+	}
+	.right_panel{float:right;text-align:right}
+	.package{
+		margin-bottom:60px;
+	}
+	#separator-quotes .no-margin, #separator-quotes2 .no-margin{position:relative;margin-top:-10px;margin-bottom:-9px;}
 
-#separator-quotes h5,#separator-quotes2 h5{
-	position:relative;z-index:2;padding-left:60px;padding-top:50px;font-weight: 700;font-size: 2.4em;color:#EC1717;
-	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-}
+	#separator-quotes h5,#separator-quotes2 h5{
+		position:relative;z-index:2;padding-left:60px;padding-top:50px;font-weight: 700;font-size: 2.4em;color:#EC1717;
+		text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+	}
 
-#separator-quotes h4, #separator-quotes2 h4{
-	position:relative;z-index:2;padding-left: 60px;font-size:1.4em;font-weight:400;
-}
-#separator-quotes h3, #separator-quotes2 h3{
-	position:relative;z-index:2;padding-left:60px;font-size:1em;width:50%;font-weight: 200;
-}
-#separator-quotes button{
-	width:200px;
-	position:relative;
-	margin-left:60px;
-	margin-bottom:90px;
-}
-#separator-quotes2 button{
-	width: 100%;
-	position:relative;
-	margin:10px 0 0;
-}
-.form_contact{margin-left:60px;margin-bottom:60px;}
-.form_contact textarea{
-	width:100%;
-	height: 100px;
-	padding:5px;
-	resize:none;
-}
+	#separator-quotes h4, #separator-quotes2 h4{
+		position:relative;z-index:2;padding-left: 60px;font-size:1.4em;font-weight:400;
+	}
+	#separator-quotes h3, #separator-quotes2 h3{
+		position:relative;z-index:2;padding-left:60px;font-size:1em;width:50%;font-weight: 200;
+	}
+	#separator-quotes button{
+		width:200px;
+		position:relative;
+		margin-left:60px;
+		margin-bottom:90px;
+	}
+	#separator-quotes2 button{
+		width: 100%;
+		position:relative;
+		margin:10px 0 0;
+	}
+	.form_contact{margin-left:60px;margin-bottom:60px;}
+	.form_contact textarea{
+		width:100%;
+		height: 100px;
+		padding:5px;
+		resize:none;
+	}
 
-.btn_follow{
-	float:right;width:120px;padding:10px;height:35px;
-}
-.right_side{
-	right:0;position:absolute;background-image:url("/img/main-cnt-right.png");z-index:-99999;height: 200px;
-}
-.left_side{
-	left:0;position:absolute;background-image:url("/img/main-cnt-left.png");z-index:-99999;height: 200px;
-}
-.train_list input[type="text"]{
-	width:33%;
-}
-.train_list button{
-	width:100%;margin-left:0px;
-}
+	.btn_follow{
+		float:right;width:120px;padding:10px;height:35px;
+	}
+	.right_side{
+		right:0;position:absolute;background-image:url("/img/main-cnt-right.png");z-index:-99999;height: 200px;
+	}
+	.left_side{
+		left:0;position:absolute;background-image:url("/img/main-cnt-left.png");z-index:-99999;height: 200px;
+	}
+	.train_list input[type="text"]{
+		width:33%;
+	}
+	.train_list button{
+		width:100%;margin-left:0px;
+	}
 
-#create_training p{color:#222;font-weight: 700;font-size:1.4em;}
+	#create_training p{color:#222;font-weight: 700;font-size:1.4em;}
 
-#create_training ul{list-style: none;}
-#create_training button{width:100%;height:30px;padding:0;}
-#create_training input[type="date"]{padding: 8px;border: 2px solid #ddd;outline: 0;width: 100%;margin:0;}
+	#create_training ul{list-style: none;}
+	#create_training button{width:100%;height:30px;padding:0;}
+	#create_training input[type="date"]{padding: 8px;border: 2px solid #ddd;outline: 0;width: 100%;margin:0;}
 
-.txt-area{
-	padding-left: 5px;
-    border: 2px solid #ddd;
-    width: 98.5%;
-    margin-left:5px;
-    height: 60px;
-    resize:none;
-    outline: 0;
-}
-#create_training #ul_training li select{
-	padding-left: 5px;
-    margin-left:5px;
-    border: 2px solid #ddd;
-    width: 98.5%;
-    height: 40px; 	
-    outline: 0;	
-}
-#create_training #ul_training li input[type="number"]{
-	padding:0 5px;
-	height: 40px;
-    margin-top:10px;
-    margin-left: 5px;
-    border: 2px solid #ddd;	
-    outline: 0;		
-}
-#create_training #ul_training li input[type="text"]{
-padding-left: 5px;
-    margin:0;
-    width:100%;
-    border: 2px solid #ddd;	
-    height: 40px;
-    outline: 0;			
-}
+	.txt-area{
+		padding-left: 5px;
+		border: 2px solid #ddd;
+		width: 98.5%;
+		/*margin-left:5px;*/
+		margin-bottom: 10px;
+		height: 60px;
+		resize:none;
+		outline: 0;
 
-#create_training #ul_training .exc input[type="text"]{
-padding-left: 5px;
-    margin-left:5px;
-    width:40%;
-    height: 40px;
-    border: 2px solid #ddd;	
-    outline: 0;			
-}
-.others{
-	margin-top:-20px;
-}
-.exc p{margin-left:10px;
-}
+	}
+	#create_training #ul_training li select{
+		padding-left: 5px;
+		margin-left:5px;
+		border: 2px solid #ddd;
+		width: 98.5%;
+		height: 40px; 	
+		outline: 0;	
+	}
+	#create_training #ul_training li input[type="number"]{
+		padding:0 5px;
+		height: 40px;
+		/*margin-top:10px;*/
+		margin-left: 5px;
+		border: 2px solid #ddd;	
+		outline: 0;		
+	}
+	#create_training #ul_training li input[type="text"]{
+		padding-left: 5px;
+		margin:0;
+		width:100%;
+		border: 2px solid #ddd;	
+		height: 40px;
+		outline: 0;			
+	}
+
+	#create_training #ul_training .exc input[type="text"]{
+		padding-left: 5px;
+		margin-left:5px;
+		width:40%;
+		height: 40px;
+		border: 2px solid #ddd;	
+		outline: 0;			
+	}
+	.others{
+		margin-top:-20px;
+	}
+	.exc p{margin-left:10px;
+	}
+	#ul_training li .col_12{
+		background-color:#ddd;
+	}
+	#ul_training li .col_12 .exc .col_12{
+		background-color:#eee;
+		width:98%;
+		padding-bottom:20px;
+		margin-top:-8px;
+	}
+	#ul_training li .col_12 .exc .col_8{
+		background-color:#eee;
+		margin-top:-10px;
+		width:98%;
+	}
+	#ul_training li .col_12 .exc .blank{
+		background-color:#eee;
+		margin-top:-10px;
+		margin-bottom: -30px;
+		height: 50px;
+		width:98%;
+	}
+	#input_info_exc{
+		margin-left: 5px;
+	}
+
+#my_box_training p{color:#2d2b2a}
+#my_box_training select{color:#2d2b2a;}
+#my_box_training .txt-area{color:#2d2b2a;}
