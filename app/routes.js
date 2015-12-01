@@ -17,18 +17,22 @@ module.exports = function(app, passport) {
 	app.get('/',function(req, res) {
 		if (req.isAuthenticated()){
 			if(!req.user.registerCompleted){
-				res.render('gym/index',{completeRegister: true});
+				res.render('gym/index',{completeRegister: true,csrf: req.csrfToken()});
 			}
 			else res.redirect('/main');
 
-		}else res.render('gym/index');
+		}else res.render('gym/index',{csrf: req.csrfToken()});
 			//sessionUsername = req.user.username;
 			//res.render('gym/index', {isLogged: true, username: "JUAN"});
 
 	});
 
 	app.get('/main',middleware.isLoggedAndFullRegistered,function(req, res) {
-			res.render('gym/main', {user : req.user });
+			res.render('gym/main', {user : req.user,csrf: req.csrfToken() });
+	});
+
+	app.post('/getCSRFToken',middleware.isLoggedAndFullRegistered,function(req, res) {
+		res.send({csrf: req.csrfToken() });
 	});
 
 };

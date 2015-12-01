@@ -1,6 +1,7 @@
 /**
  * Created by root on 27/08/15.
  */
+var csrf = require
 var User = require('../models/user');
 var fs    = require("fs");
 var config = require('../../config/config');

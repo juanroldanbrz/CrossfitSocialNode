@@ -2,18 +2,408 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee17a65a-40cd-4ef8-b408-910ac6813884" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/validator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/profile/55df447260c889ea1cf296ab" afterPath="$PROJECT_DIR$/public/img/profile/55df447260c889ea1cf296ab" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/profile/55df46060b9f53961de95e2c" afterPath="$PROJECT_DIR$/public/img/profile/55df46060b9f53961de95e2c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/profile/55df465aa6fe7a2b1e28d43b" afterPath="$PROJECT_DIR$/public/img/profile/55df465aa6fe7a2b1e28d43b" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/profile/55e1da6bee3166eb178fab06" afterPath="$PROJECT_DIR$/public/img/profile/55e1da6bee3166eb178fab06" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/profile/55e31b056db2f2ce1076fbfb" afterPath="$PROJECT_DIR$/public/img/profile/55e31b056db2f2ce1076fbfb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/profile/55e4238eea09c65510957b1d" afterPath="$PROJECT_DIR$/public/img/profile/55e4238eea09c65510957b1d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/profile/55e42f2c60c82e44153cea66" afterPath="$PROJECT_DIR$/public/img/profile/55e42f2c60c82e44153cea66" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/profile/55e442bb642da34f1d86eed2" afterPath="$PROJECT_DIR$/public/img/profile/55e442bb642da34f1d86eed2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/profile/55e4723d317292392c291023" afterPath="$PROJECT_DIR$/public/img/profile/55e4723d317292392c291023" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/profile/55e47327ff0111a32ce10547" afterPath="$PROJECT_DIR$/public/img/profile/55e47327ff0111a32ce10547" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/profile/55e47412f6d2832b2d662fba" afterPath="$PROJECT_DIR$/public/img/profile/55e47412f6d2832b2d662fba" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/profile/55e4849dd53e0d250c4b674b" afterPath="$PROJECT_DIR$/public/img/profile/55e4849dd53e0d250c4b674b" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/profile/55e485454c6ddfdf11006506" afterPath="$PROJECT_DIR$/public/img/profile/55e485454c6ddfdf11006506" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/profile/55e5b8294c261c170b500cb2" afterPath="$PROJECT_DIR$/public/img/profile/55e5b8294c261c170b500cb2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/profile/55e5e2ab1502bf133079aef6" afterPath="$PROJECT_DIR$/public/img/profile/55e5e2ab1502bf133079aef6" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/profile/55e5e4fa1502bf133079aef7" afterPath="$PROJECT_DIR$/public/img/profile/55e5e4fa1502bf133079aef7" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/profile/55e726dc9f89f46c134e8c99" afterPath="$PROJECT_DIR$/public/img/profile/55e726dc9f89f46c134e8c99" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/profile/55e72fd25ecf2cb815354759" afterPath="$PROJECT_DIR$/public/img/profile/55e72fd25ecf2cb815354759" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/profile/55e731e54fc3878a178ffc38" afterPath="$PROJECT_DIR$/public/img/profile/55e731e54fc3878a178ffc38" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/profile/55e73401e346b8cc18036aed" afterPath="$PROJECT_DIR$/public/img/profile/55e73401e346b8cc18036aed" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/profile/55e751ea3eb476a50ab7c8cb" afterPath="$PROJECT_DIR$/public/img/profile/55e751ea3eb476a50ab7c8cb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/ASEAN.png" afterPath="$PROJECT_DIR$/public/img/flags/ASEAN.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Afghanistan.png" afterPath="$PROJECT_DIR$/public/img/flags/Afghanistan.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/African Union(OAS).png" afterPath="$PROJECT_DIR$/public/img/flags/African Union(OAS).png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Albania.png" afterPath="$PROJECT_DIR$/public/img/flags/Albania.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Algeria.png" afterPath="$PROJECT_DIR$/public/img/flags/Algeria.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/American Samoa.png" afterPath="$PROJECT_DIR$/public/img/flags/American Samoa.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Andorra.png" afterPath="$PROJECT_DIR$/public/img/flags/Andorra.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Angola.png" afterPath="$PROJECT_DIR$/public/img/flags/Angola.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Anguilla.png" afterPath="$PROJECT_DIR$/public/img/flags/Anguilla.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Antarctica.png" afterPath="$PROJECT_DIR$/public/img/flags/Antarctica.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Antigua &amp; Barbuda.png" afterPath="$PROJECT_DIR$/public/img/flags/Antigua &amp; Barbuda.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Arab League.png" afterPath="$PROJECT_DIR$/public/img/flags/Arab League.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Argentina.png" afterPath="$PROJECT_DIR$/public/img/flags/Argentina.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Armenia.png" afterPath="$PROJECT_DIR$/public/img/flags/Armenia.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Aruba.png" afterPath="$PROJECT_DIR$/public/img/flags/Aruba.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Australia.png" afterPath="$PROJECT_DIR$/public/img/flags/Australia.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Austria.png" afterPath="$PROJECT_DIR$/public/img/flags/Austria.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Azerbaijan.png" afterPath="$PROJECT_DIR$/public/img/flags/Azerbaijan.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Bahamas.png" afterPath="$PROJECT_DIR$/public/img/flags/Bahamas.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Bahrain.png" afterPath="$PROJECT_DIR$/public/img/flags/Bahrain.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Bangladesh.png" afterPath="$PROJECT_DIR$/public/img/flags/Bangladesh.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Barbados.png" afterPath="$PROJECT_DIR$/public/img/flags/Barbados.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Belarus.png" afterPath="$PROJECT_DIR$/public/img/flags/Belarus.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Belgium.png" afterPath="$PROJECT_DIR$/public/img/flags/Belgium.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Belize.png" afterPath="$PROJECT_DIR$/public/img/flags/Belize.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Benin.png" afterPath="$PROJECT_DIR$/public/img/flags/Benin.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Bermuda.png" afterPath="$PROJECT_DIR$/public/img/flags/Bermuda.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Bhutan.png" afterPath="$PROJECT_DIR$/public/img/flags/Bhutan.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Bolivia.png" afterPath="$PROJECT_DIR$/public/img/flags/Bolivia.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Bosnia &amp; Herzegovina.png" afterPath="$PROJECT_DIR$/public/img/flags/Bosnia &amp; Herzegovina.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Botswana.png" afterPath="$PROJECT_DIR$/public/img/flags/Botswana.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Brazil.png" afterPath="$PROJECT_DIR$/public/img/flags/Brazil.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Brunei.png" afterPath="$PROJECT_DIR$/public/img/flags/Brunei.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Bulgaria.png" afterPath="$PROJECT_DIR$/public/img/flags/Bulgaria.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Burkina Faso.png" afterPath="$PROJECT_DIR$/public/img/flags/Burkina Faso.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Burundi.png" afterPath="$PROJECT_DIR$/public/img/flags/Burundi.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/CARICOM.png" afterPath="$PROJECT_DIR$/public/img/flags/CARICOM.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/CIS.png" afterPath="$PROJECT_DIR$/public/img/flags/CIS.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Cambodja.png" afterPath="$PROJECT_DIR$/public/img/flags/Cambodja.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Cameroon.png" afterPath="$PROJECT_DIR$/public/img/flags/Cameroon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Canada.png" afterPath="$PROJECT_DIR$/public/img/flags/Canada.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Cape Verde.png" afterPath="$PROJECT_DIR$/public/img/flags/Cape Verde.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Cayman Islands.png" afterPath="$PROJECT_DIR$/public/img/flags/Cayman Islands.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Central African Republic.png" afterPath="$PROJECT_DIR$/public/img/flags/Central African Republic.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Chad.png" afterPath="$PROJECT_DIR$/public/img/flags/Chad.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Chile.png" afterPath="$PROJECT_DIR$/public/img/flags/Chile.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/China.png" afterPath="$PROJECT_DIR$/public/img/flags/China.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Colombia.png" afterPath="$PROJECT_DIR$/public/img/flags/Colombia.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Commonwealth.png" afterPath="$PROJECT_DIR$/public/img/flags/Commonwealth.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Comoros.png" afterPath="$PROJECT_DIR$/public/img/flags/Comoros.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Congo-Brazzaville.png" afterPath="$PROJECT_DIR$/public/img/flags/Congo-Brazzaville.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Congo-Kinshasa.png" afterPath="$PROJECT_DIR$/public/img/flags/Congo-Kinshasa.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Cook Islands.png" afterPath="$PROJECT_DIR$/public/img/flags/Cook Islands.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Costa Rica.png" afterPath="$PROJECT_DIR$/public/img/flags/Costa Rica.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Cote d'Ivoire.png" afterPath="$PROJECT_DIR$/public/img/flags/Cote d'Ivoire.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Croatia.png" afterPath="$PROJECT_DIR$/public/img/flags/Croatia.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Cuba.png" afterPath="$PROJECT_DIR$/public/img/flags/Cuba.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Cyprus.png" afterPath="$PROJECT_DIR$/public/img/flags/Cyprus.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Czech Republic.png" afterPath="$PROJECT_DIR$/public/img/flags/Czech Republic.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Denmark.png" afterPath="$PROJECT_DIR$/public/img/flags/Denmark.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Djibouti.png" afterPath="$PROJECT_DIR$/public/img/flags/Djibouti.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Dominica.png" afterPath="$PROJECT_DIR$/public/img/flags/Dominica.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Dominican Republic.png" afterPath="$PROJECT_DIR$/public/img/flags/Dominican Republic.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Egypt.png" afterPath="$PROJECT_DIR$/public/img/flags/Egypt.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/El Salvador.png" afterPath="$PROJECT_DIR$/public/img/flags/El Salvador.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/England.png" afterPath="$PROJECT_DIR$/public/img/flags/England.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Equador.png" afterPath="$PROJECT_DIR$/public/img/flags/Equador.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Equatorial Guinea.png" afterPath="$PROJECT_DIR$/public/img/flags/Equatorial Guinea.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Eritrea.png" afterPath="$PROJECT_DIR$/public/img/flags/Eritrea.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Estonia.png" afterPath="$PROJECT_DIR$/public/img/flags/Estonia.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Ethiopia.png" afterPath="$PROJECT_DIR$/public/img/flags/Ethiopia.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/European Union.png" afterPath="$PROJECT_DIR$/public/img/flags/European Union.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Faroes.png" afterPath="$PROJECT_DIR$/public/img/flags/Faroes.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Fiji.png" afterPath="$PROJECT_DIR$/public/img/flags/Fiji.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Finland.png" afterPath="$PROJECT_DIR$/public/img/flags/Finland.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/fonts/FontAwesome.otf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/France.png" afterPath="$PROJECT_DIR$/public/img/flags/France.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Gabon.png" afterPath="$PROJECT_DIR$/public/img/flags/Gabon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Gambia.png" afterPath="$PROJECT_DIR$/public/img/flags/Gambia.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Georgia.png" afterPath="$PROJECT_DIR$/public/img/flags/Georgia.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Germany.png" afterPath="$PROJECT_DIR$/public/img/flags/Germany.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Ghana.png" afterPath="$PROJECT_DIR$/public/img/flags/Ghana.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Gibraltar.png" afterPath="$PROJECT_DIR$/public/img/flags/Gibraltar.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Greece.png" afterPath="$PROJECT_DIR$/public/img/flags/Greece.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Greenland.png" afterPath="$PROJECT_DIR$/public/img/flags/Greenland.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Grenada.png" afterPath="$PROJECT_DIR$/public/img/flags/Grenada.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Guadeloupe.png" afterPath="$PROJECT_DIR$/public/img/flags/Guadeloupe.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Guam.png" afterPath="$PROJECT_DIR$/public/img/flags/Guam.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Guatemala.png" afterPath="$PROJECT_DIR$/public/img/flags/Guatemala.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Guernsey.png" afterPath="$PROJECT_DIR$/public/img/flags/Guernsey.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Guinea-Bissau.png" afterPath="$PROJECT_DIR$/public/img/flags/Guinea-Bissau.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Guinea.png" afterPath="$PROJECT_DIR$/public/img/flags/Guinea.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Guyana.png" afterPath="$PROJECT_DIR$/public/img/flags/Guyana.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Haiti.png" afterPath="$PROJECT_DIR$/public/img/flags/Haiti.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Honduras.png" afterPath="$PROJECT_DIR$/public/img/flags/Honduras.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Hong Kong.png" afterPath="$PROJECT_DIR$/public/img/flags/Hong Kong.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Hungary.png" afterPath="$PROJECT_DIR$/public/img/flags/Hungary.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Iceland.png" afterPath="$PROJECT_DIR$/public/img/flags/Iceland.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/India.png" afterPath="$PROJECT_DIR$/public/img/flags/India.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Indonesia.png" afterPath="$PROJECT_DIR$/public/img/flags/Indonesia.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Iran.png" afterPath="$PROJECT_DIR$/public/img/flags/Iran.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Iraq.png" afterPath="$PROJECT_DIR$/public/img/flags/Iraq.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Ireland.png" afterPath="$PROJECT_DIR$/public/img/flags/Ireland.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Islamic Conference.png" afterPath="$PROJECT_DIR$/public/img/flags/Islamic Conference.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Isle of Man.png" afterPath="$PROJECT_DIR$/public/img/flags/Isle of Man.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Israel.png" afterPath="$PROJECT_DIR$/public/img/flags/Israel.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Italy.png" afterPath="$PROJECT_DIR$/public/img/flags/Italy.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Jamaica.png" afterPath="$PROJECT_DIR$/public/img/flags/Jamaica.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Jersey.png" afterPath="$PROJECT_DIR$/public/img/flags/Jersey.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Jordan.png" afterPath="$PROJECT_DIR$/public/img/flags/Jordan.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Kazakhstan.png" afterPath="$PROJECT_DIR$/public/img/flags/Kazakhstan.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Kenya.png" afterPath="$PROJECT_DIR$/public/img/flags/Kenya.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Kiribati.png" afterPath="$PROJECT_DIR$/public/img/flags/Kiribati.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Kosovo.png" afterPath="$PROJECT_DIR$/public/img/flags/Kosovo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Kuwait.png" afterPath="$PROJECT_DIR$/public/img/flags/Kuwait.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Kyrgyzstan.png" afterPath="$PROJECT_DIR$/public/img/flags/Kyrgyzstan.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Laos.png" afterPath="$PROJECT_DIR$/public/img/flags/Laos.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Latvia.png" afterPath="$PROJECT_DIR$/public/img/flags/Latvia.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Lebanon.png" afterPath="$PROJECT_DIR$/public/img/flags/Lebanon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Lesotho.png" afterPath="$PROJECT_DIR$/public/img/flags/Lesotho.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Liberia.png" afterPath="$PROJECT_DIR$/public/img/flags/Liberia.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Libya.png" afterPath="$PROJECT_DIR$/public/img/flags/Libya.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Liechtenstein.png" afterPath="$PROJECT_DIR$/public/img/flags/Liechtenstein.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Lithuania.png" afterPath="$PROJECT_DIR$/public/img/flags/Lithuania.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Luxembourg.png" afterPath="$PROJECT_DIR$/public/img/flags/Luxembourg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Macao.png" afterPath="$PROJECT_DIR$/public/img/flags/Macao.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Macedonia.png" afterPath="$PROJECT_DIR$/public/img/flags/Macedonia.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Madagascar.png" afterPath="$PROJECT_DIR$/public/img/flags/Madagascar.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Malawi.png" afterPath="$PROJECT_DIR$/public/img/flags/Malawi.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Malaysia.png" afterPath="$PROJECT_DIR$/public/img/flags/Malaysia.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Maldives.png" afterPath="$PROJECT_DIR$/public/img/flags/Maldives.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Mali.png" afterPath="$PROJECT_DIR$/public/img/flags/Mali.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Malta.png" afterPath="$PROJECT_DIR$/public/img/flags/Malta.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Marshall Islands.png" afterPath="$PROJECT_DIR$/public/img/flags/Marshall Islands.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Martinique.png" afterPath="$PROJECT_DIR$/public/img/flags/Martinique.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Mauritania.png" afterPath="$PROJECT_DIR$/public/img/flags/Mauritania.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Mauritius.png" afterPath="$PROJECT_DIR$/public/img/flags/Mauritius.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Mexico.png" afterPath="$PROJECT_DIR$/public/img/flags/Mexico.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Micronesia.png" afterPath="$PROJECT_DIR$/public/img/flags/Micronesia.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Moldova.png" afterPath="$PROJECT_DIR$/public/img/flags/Moldova.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Monaco.png" afterPath="$PROJECT_DIR$/public/img/flags/Monaco.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Mongolia.png" afterPath="$PROJECT_DIR$/public/img/flags/Mongolia.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Montenegro.png" afterPath="$PROJECT_DIR$/public/img/flags/Montenegro.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Montserrat.png" afterPath="$PROJECT_DIR$/public/img/flags/Montserrat.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Morocco.png" afterPath="$PROJECT_DIR$/public/img/flags/Morocco.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Mozambique.png" afterPath="$PROJECT_DIR$/public/img/flags/Mozambique.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Myanmar(Burma).png" afterPath="$PROJECT_DIR$/public/img/flags/Myanmar(Burma).png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/NATO.png" afterPath="$PROJECT_DIR$/public/img/flags/NATO.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Namibia.png" afterPath="$PROJECT_DIR$/public/img/flags/Namibia.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Nauru.png" afterPath="$PROJECT_DIR$/public/img/flags/Nauru.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Nepal.png" afterPath="$PROJECT_DIR$/public/img/flags/Nepal.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Netherlands Antilles.png" afterPath="$PROJECT_DIR$/public/img/flags/Netherlands Antilles.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Netherlands.png" afterPath="$PROJECT_DIR$/public/img/flags/Netherlands.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/New Caledonia.png" afterPath="$PROJECT_DIR$/public/img/flags/New Caledonia.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/New Zealand.png" afterPath="$PROJECT_DIR$/public/img/flags/New Zealand.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Nicaragua.png" afterPath="$PROJECT_DIR$/public/img/flags/Nicaragua.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Niger.png" afterPath="$PROJECT_DIR$/public/img/flags/Niger.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Nigeria.png" afterPath="$PROJECT_DIR$/public/img/flags/Nigeria.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/North Korea.png" afterPath="$PROJECT_DIR$/public/img/flags/North Korea.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Northern Cyprus.png" afterPath="$PROJECT_DIR$/public/img/flags/Northern Cyprus.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Northern Ireland.png" afterPath="$PROJECT_DIR$/public/img/flags/Northern Ireland.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Norway.png" afterPath="$PROJECT_DIR$/public/img/flags/Norway.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/OPEC.png" afterPath="$PROJECT_DIR$/public/img/flags/OPEC.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Olimpic Movement.png" afterPath="$PROJECT_DIR$/public/img/flags/Olimpic Movement.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Oman.png" afterPath="$PROJECT_DIR$/public/img/flags/Oman.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Pakistan.png" afterPath="$PROJECT_DIR$/public/img/flags/Pakistan.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Palau.png" afterPath="$PROJECT_DIR$/public/img/flags/Palau.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Palestine.png" afterPath="$PROJECT_DIR$/public/img/flags/Palestine.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Panama.png" afterPath="$PROJECT_DIR$/public/img/flags/Panama.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Papua New Guinea.png" afterPath="$PROJECT_DIR$/public/img/flags/Papua New Guinea.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Paraguay.png" afterPath="$PROJECT_DIR$/public/img/flags/Paraguay.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/Personal-Training.jpg" afterPath="$PROJECT_DIR$/public/img/Personal-Training.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Peru.png" afterPath="$PROJECT_DIR$/public/img/flags/Peru.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Philippines.png" afterPath="$PROJECT_DIR$/public/img/flags/Philippines.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Poland.png" afterPath="$PROJECT_DIR$/public/img/flags/Poland.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Portugal.png" afterPath="$PROJECT_DIR$/public/img/flags/Portugal.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Puerto Rico.png" afterPath="$PROJECT_DIR$/public/img/flags/Puerto Rico.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Qatar.png" afterPath="$PROJECT_DIR$/public/img/flags/Qatar.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Red Cross.png" afterPath="$PROJECT_DIR$/public/img/flags/Red Cross.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Reunion.png" afterPath="$PROJECT_DIR$/public/img/flags/Reunion.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Romania.png" afterPath="$PROJECT_DIR$/public/img/flags/Romania.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Russian Federation.png" afterPath="$PROJECT_DIR$/public/img/flags/Russian Federation.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Rwanda.png" afterPath="$PROJECT_DIR$/public/img/flags/Rwanda.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Saint Lucia.png" afterPath="$PROJECT_DIR$/public/img/flags/Saint Lucia.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Samoa.png" afterPath="$PROJECT_DIR$/public/img/flags/Samoa.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/San Marino.png" afterPath="$PROJECT_DIR$/public/img/flags/San Marino.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Sao Tome &amp; Principe.png" afterPath="$PROJECT_DIR$/public/img/flags/Sao Tome &amp; Principe.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Saudi Arabia.png" afterPath="$PROJECT_DIR$/public/img/flags/Saudi Arabia.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Scotland.png" afterPath="$PROJECT_DIR$/public/img/flags/Scotland.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Senegal.png" afterPath="$PROJECT_DIR$/public/img/flags/Senegal.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Serbia(Yugoslavia).png" afterPath="$PROJECT_DIR$/public/img/flags/Serbia(Yugoslavia).png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Seyshelles.png" afterPath="$PROJECT_DIR$/public/img/flags/Seyshelles.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Sierra Leone.png" afterPath="$PROJECT_DIR$/public/img/flags/Sierra Leone.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Singapore.png" afterPath="$PROJECT_DIR$/public/img/flags/Singapore.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Slovakia.png" afterPath="$PROJECT_DIR$/public/img/flags/Slovakia.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Slovenia.png" afterPath="$PROJECT_DIR$/public/img/flags/Slovenia.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Solomon Islands.png" afterPath="$PROJECT_DIR$/public/img/flags/Solomon Islands.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Somalia.png" afterPath="$PROJECT_DIR$/public/img/flags/Somalia.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Somaliland.png" afterPath="$PROJECT_DIR$/public/img/flags/Somaliland.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/South Africa.png" afterPath="$PROJECT_DIR$/public/img/flags/South Africa.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/South Korea.png" afterPath="$PROJECT_DIR$/public/img/flags/South Korea.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Spain.png" afterPath="$PROJECT_DIR$/public/img/flags/Spain.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Sri Lanka.png" afterPath="$PROJECT_DIR$/public/img/flags/Sri Lanka.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/St Kitts &amp; Nevis.png" afterPath="$PROJECT_DIR$/public/img/flags/St Kitts &amp; Nevis.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/St Vincent &amp; the Grenadines.png" afterPath="$PROJECT_DIR$/public/img/flags/St Vincent &amp; the Grenadines.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Sudan.png" afterPath="$PROJECT_DIR$/public/img/flags/Sudan.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Suriname.png" afterPath="$PROJECT_DIR$/public/img/flags/Suriname.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Swaziland.png" afterPath="$PROJECT_DIR$/public/img/flags/Swaziland.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Sweden.png" afterPath="$PROJECT_DIR$/public/img/flags/Sweden.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Switzerland.png" afterPath="$PROJECT_DIR$/public/img/flags/Switzerland.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Syria.png" afterPath="$PROJECT_DIR$/public/img/flags/Syria.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Tahiti(French Polinesia).png" afterPath="$PROJECT_DIR$/public/img/flags/Tahiti(French Polinesia).png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Taiwan.png" afterPath="$PROJECT_DIR$/public/img/flags/Taiwan.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Tajikistan.png" afterPath="$PROJECT_DIR$/public/img/flags/Tajikistan.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Tanzania.png" afterPath="$PROJECT_DIR$/public/img/flags/Tanzania.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Thailand.png" afterPath="$PROJECT_DIR$/public/img/flags/Thailand.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Timor-Leste.png" afterPath="$PROJECT_DIR$/public/img/flags/Timor-Leste.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Togo.png" afterPath="$PROJECT_DIR$/public/img/flags/Togo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Tonga.png" afterPath="$PROJECT_DIR$/public/img/flags/Tonga.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Trinidad &amp; Tobago.png" afterPath="$PROJECT_DIR$/public/img/flags/Trinidad &amp; Tobago.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Tunisia.png" afterPath="$PROJECT_DIR$/public/img/flags/Tunisia.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Turkey.png" afterPath="$PROJECT_DIR$/public/img/flags/Turkey.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Turkmenistan.png" afterPath="$PROJECT_DIR$/public/img/flags/Turkmenistan.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Turks and Caicos Islands.png" afterPath="$PROJECT_DIR$/public/img/flags/Turks and Caicos Islands.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Tuvalu.png" afterPath="$PROJECT_DIR$/public/img/flags/Tuvalu.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Uganda.png" afterPath="$PROJECT_DIR$/public/img/flags/Uganda.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Ukraine.png" afterPath="$PROJECT_DIR$/public/img/flags/Ukraine.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/United Arab Emirates.png" afterPath="$PROJECT_DIR$/public/img/flags/United Arab Emirates.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/United Kingdom(Great Britain).png" afterPath="$PROJECT_DIR$/public/img/flags/United Kingdom(Great Britain).png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/United Nations.png" afterPath="$PROJECT_DIR$/public/img/flags/United Nations.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/United States of America(USA).png" afterPath="$PROJECT_DIR$/public/img/flags/United States of America(USA).png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Uruguay.png" afterPath="$PROJECT_DIR$/public/img/flags/Uruguay.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Uzbekistan.png" afterPath="$PROJECT_DIR$/public/img/flags/Uzbekistan.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Vanuatu.png" afterPath="$PROJECT_DIR$/public/img/flags/Vanuatu.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Vatican City.png" afterPath="$PROJECT_DIR$/public/img/flags/Vatican City.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Venezuela.png" afterPath="$PROJECT_DIR$/public/img/flags/Venezuela.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Viet Nam.png" afterPath="$PROJECT_DIR$/public/img/flags/Viet Nam.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Virgin Islands British.png" afterPath="$PROJECT_DIR$/public/img/flags/Virgin Islands British.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Virgin Islands US.png" afterPath="$PROJECT_DIR$/public/img/flags/Virgin Islands US.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Wales.png" afterPath="$PROJECT_DIR$/public/img/flags/Wales.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Western Sahara.png" afterPath="$PROJECT_DIR$/public/img/flags/Western Sahara.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Yemen.png" afterPath="$PROJECT_DIR$/public/img/flags/Yemen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Zambia.png" afterPath="$PROJECT_DIR$/public/img/flags/Zambia.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/Zimbabwe.png" afterPath="$PROJECT_DIR$/public/img/flags/Zimbabwe.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/banner_parallax.jpg" afterPath="$PROJECT_DIR$/public/img/banner_parallax.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/banner_parallax.psd" afterPath="$PROJECT_DIR$/public/img/banner_parallax.psd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/banner_parallax2.jpg" afterPath="$PROJECT_DIR$/public/img/banner_parallax2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/img/fancybox/blank.gif" afterPath="$PROJECT_DIR$/public/css/img/fancybox/blank.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/img/breadcrumbs-bg.gif" afterPath="$PROJECT_DIR$/public/css/img/breadcrumbs-bg.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/img/bx_loader.gif" afterPath="$PROJECT_DIR$/public/css/img/bx_loader.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/choose-dumbbells1.jpg" afterPath="$PROJECT_DIR$/public/img/choose-dumbbells1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/img/controls.png" afterPath="$PROJECT_DIR$/public/css/img/controls.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/img/fancybox/fancy_close.png" afterPath="$PROJECT_DIR$/public/css/img/fancybox/fancy_close.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/img/fancybox/fancy_loading.png" afterPath="$PROJECT_DIR$/public/css/img/fancybox/fancy_loading.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/img/fancybox/fancy_nav_left.png" afterPath="$PROJECT_DIR$/public/css/img/fancybox/fancy_nav_left.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/img/fancybox/fancy_nav_right.png" afterPath="$PROJECT_DIR$/public/css/img/fancybox/fancy_nav_right.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/img/fancybox/fancy_shadow_e.png" afterPath="$PROJECT_DIR$/public/css/img/fancybox/fancy_shadow_e.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/img/fancybox/fancy_shadow_n.png" afterPath="$PROJECT_DIR$/public/css/img/fancybox/fancy_shadow_n.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/img/fancybox/fancy_shadow_ne.png" afterPath="$PROJECT_DIR$/public/css/img/fancybox/fancy_shadow_ne.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/img/fancybox/fancy_shadow_nw.png" afterPath="$PROJECT_DIR$/public/css/img/fancybox/fancy_shadow_nw.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/img/fancybox/fancy_shadow_s.png" afterPath="$PROJECT_DIR$/public/css/img/fancybox/fancy_shadow_s.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/img/fancybox/fancy_shadow_se.png" afterPath="$PROJECT_DIR$/public/css/img/fancybox/fancy_shadow_se.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/img/fancybox/fancy_shadow_sw.png" afterPath="$PROJECT_DIR$/public/css/img/fancybox/fancy_shadow_sw.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/img/fancybox/fancy_shadow_w.png" afterPath="$PROJECT_DIR$/public/css/img/fancybox/fancy_shadow_w.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/img/fancybox/fancy_title_left.png" afterPath="$PROJECT_DIR$/public/css/img/fancybox/fancy_title_left.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/img/fancybox/fancy_title_main.png" afterPath="$PROJECT_DIR$/public/css/img/fancybox/fancy_title_main.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/img/fancybox/fancy_title_over.png" afterPath="$PROJECT_DIR$/public/css/img/fancybox/fancy_title_over.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/img/fancybox/fancy_title_right.png" afterPath="$PROJECT_DIR$/public/css/img/fancybox/fancy_title_right.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/img/fancybox/fancybox-x.png" afterPath="$PROJECT_DIR$/public/css/img/fancybox/fancybox-x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/img/fancybox/fancybox-y.png" afterPath="$PROJECT_DIR$/public/css/img/fancybox/fancybox-y.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/img/fancybox/fancybox.png" afterPath="$PROJECT_DIR$/public/css/img/fancybox/fancybox.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/fonts/fontawesome-webfont.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/fonts/fontawesome-webfont.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/fonts/fontawesome-webfont.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/front.jpg" afterPath="$PROJECT_DIR$/public/img/front.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/girl.png" afterPath="$PROJECT_DIR$/public/img/girl.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/img/gray_jean.png" afterPath="$PROJECT_DIR$/public/css/img/gray_jean.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/header-table.png" afterPath="$PROJECT_DIR$/public/img/header-table.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/img/icon-arrow-right.png" afterPath="$PROJECT_DIR$/public/css/img/icon-arrow-right.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/flags/japan.png" afterPath="$PROJECT_DIR$/public/img/flags/japan.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/main-cnt-left.png" afterPath="$PROJECT_DIR$/public/img/main-cnt-left.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/main-cnt-right.png" afterPath="$PROJECT_DIR$/public/img/main-cnt-right.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/not_found.jpg" afterPath="$PROJECT_DIR$/public/img/not_found.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/pattern.png" afterPath="$PROJECT_DIR$/public/img/pattern.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/personal-training-6.jpg" afterPath="$PROJECT_DIR$/public/img/personal-training-6.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/personal-training-med.jpg" afterPath="$PROJECT_DIR$/public/img/personal-training-med.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/personal-training.jpeg" afterPath="$PROJECT_DIR$/public/img/personal-training.jpeg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/profile.jpg" afterPath="$PROJECT_DIR$/public/img/profile.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/social.png" afterPath="$PROJECT_DIR$/public/img/social.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/sports/sprint.png" afterPath="$PROJECT_DIR$/public/img/sports/sprint.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/sports/sprint_active.png" afterPath="$PROJECT_DIR$/public/img/sports/sprint_active.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/sports/stick-man1.png" afterPath="$PROJECT_DIR$/public/img/sports/stick-man1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/training_pic.jpg" afterPath="$PROJECT_DIR$/public/img/training_pic.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/training_pic2.jpeg" afterPath="$PROJECT_DIR$/public/img/training_pic2.jpeg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/upload.png" afterPath="$PROJECT_DIR$/public/img/upload.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/user_not_found.jpg" afterPath="$PROJECT_DIR$/public/img/user_not_found.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/sports/weightlifting4.png" afterPath="$PROJECT_DIR$/public/img/sports/weightlifting4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.dropbox" afterPath="$PROJECT_DIR$/.dropbox" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/69B01F88A1CA" afterPath="$PROJECT_DIR$/public/69B01F88A1CA" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/scss/_bordered-pulled.scss" afterPath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/scss/_bordered-pulled.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/scss/_core.scss" afterPath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/scss/_core.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/scss/_fixed-width.scss" afterPath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/scss/_fixed-width.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/scss/_icons.scss" afterPath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/scss/_icons.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/scss/_larger.scss" afterPath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/scss/_larger.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/scss/_list.scss" afterPath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/scss/_list.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/scss/_mixins.scss" afterPath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/scss/_mixins.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/scss/_path.scss" afterPath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/scss/_path.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/scss/_rotated-flipped.scss" afterPath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/scss/_rotated-flipped.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/scss/_spinning.scss" afterPath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/scss/_spinning.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/scss/_stacked.scss" afterPath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/scss/_stacked.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/scss/_variables.scss" afterPath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/scss/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/aboutCrossfit.js" afterPath="$PROJECT_DIR$/app/models/aboutCrossfit.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routeControllers/admin.js" afterPath="$PROJECT_DIR$/app/routeControllers/admin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/exercise/exercise.js" afterPath="$PROJECT_DIR$/app/models/exercise/exercise.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/exercise/exerciseTemplate.js" afterPath="$PROJECT_DIR$/app/models/exercise/exerciseTemplate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/gym/loggedIn/feeds.ejs" afterPath="$PROJECT_DIR$/views/gym/loggedIn/feeds.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/gym/loggedIn/admin_boxes.ejs" afterPath="$PROJECT_DIR$/views/gym/loggedIn/admin_boxes.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/gym/loggedIn/partials/aside.ejs" afterPath="$PROJECT_DIR$/views/gym/loggedIn/partials/aside.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/benchmarkMaxes.js" afterPath="$PROJECT_DIR$/app/models/benchmarkMaxes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/benchmarkWorkouts.js" afterPath="$PROJECT_DIR$/app/models/benchmarkWorkouts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/less/bordered-pulled.less" afterPath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/less/bordered-pulled.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/box.js" afterPath="$PROJECT_DIR$/app/models/box.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/classie.js" afterPath="$PROJECT_DIR$/public/js/classie.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/clothes.js" afterPath="$PROJECT_DIR$/app/models/clothes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/component.css" afterPath="$PROJECT_DIR$/public/css/component.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/less/core.less" afterPath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/less/core.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/gym/loggedIn/create_box.ejs" afterPath="$PROJECT_DIR$/views/gym/loggedIn/create_box.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/credits.js" afterPath="$PROJECT_DIR$/app/models/credits.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/cssParser.js" afterPath="$PROJECT_DIR$/public/js/cssParser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/less/fixed-width.less" afterPath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/less/fixed-width.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/css/font-awesome.css" afterPath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/css/font-awesome.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/less/font-awesome.less" afterPath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/less/font-awesome.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/scss/font-awesome.scss" afterPath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/scss/font-awesome.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/fonts/fontawesome-webfont.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/gym/loggedIn/partials/friends.ejs" afterPath="$PROJECT_DIR$/views/gym/loggedIn/partials/friends.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/gym/head.ejs" afterPath="$PROJECT_DIR$/views/gym/head.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/gym/loggedIn/partials/header.ejs" afterPath="$PROJECT_DIR$/views/gym/loggedIn/partials/header.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/less/icons.less" afterPath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/less/icons.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/gym/index.ejs" afterPath="$PROJECT_DIR$/views/gym/index.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/gym/admin/index.ejs" afterPath="$PROJECT_DIR$/views/gym/admin/index.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/img/fancybox/jquery.easing-1.3.pack.js" afterPath="$PROJECT_DIR$/public/css/img/fancybox/jquery.easing-1.3.pack.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/jquery.fancybox-1.3.4.css" afterPath="$PROJECT_DIR$/public/css/jquery.fancybox-1.3.4.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/img/fancybox/jquery.fancybox-1.3.4.js" afterPath="$PROJECT_DIR$/public/css/img/fancybox/jquery.fancybox-1.3.4.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/img/fancybox/jquery.fancybox-1.3.4.pack.js" afterPath="$PROJECT_DIR$/public/css/img/fancybox/jquery.fancybox-1.3.4.pack.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery.js" afterPath="$PROJECT_DIR$/public/js/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/img/fancybox/jquery.mousewheel-3.0.4.pack.js" afterPath="$PROJECT_DIR$/public/css/img/fancybox/jquery.mousewheel-3.0.4.pack.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/kickstart-grid.css" afterPath="$PROJECT_DIR$/public/css/kickstart-grid.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/kickstart-menus.css" afterPath="$PROJECT_DIR$/public/css/kickstart-menus.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/kickstart-slideshow.css" afterPath="$PROJECT_DIR$/public/css/kickstart-slideshow.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/kickstart.css" afterPath="$PROJECT_DIR$/public/css/kickstart.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/kickstart.js" afterPath="$PROJECT_DIR$/public/js/kickstart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/less/larger.less" afterPath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/less/larger.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/less/list.less" afterPath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/less/list.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/location.js" afterPath="$PROJECT_DIR$/app/models/location.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routeControllers/login.js" afterPath="$PROJECT_DIR$/app/routeControllers/login.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/main.css" afterPath="$PROJECT_DIR$/public/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/gym/main.ejs" afterPath="$PROJECT_DIR$/views/gym/main.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/gym/admin/main.ejs" afterPath="$PROJECT_DIR$/views/gym/admin/main.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/main.js" afterPath="$PROJECT_DIR$/public/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/set.js" afterPath="$PROJECT_DIR$/app/models/set.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/less/mixins.less" afterPath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/less/mixins.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/modalEffects.js" afterPath="$PROJECT_DIR$/public/js/modalEffects.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/modernizr.custom.js" afterPath="$PROJECT_DIR$/public/js/modernizr.custom.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/modernizr.js" afterPath="$PROJECT_DIR$/public/js/modernizr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/gym/loggedIn/my_boxes.ejs" afterPath="$PROJECT_DIR$/views/gym/loggedIn/my_boxes.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/normalize.css" afterPath="$PROJECT_DIR$/public/css/normalize.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/less/path.less" afterPath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/less/path.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/prettify.css" afterPath="$PROJECT_DIR$/public/css/prettify.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/less/rotated-flipped.less" afterPath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/less/rotated-flipped.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.js" afterPath="$PROJECT_DIR$/app/routes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/search.css" afterPath="$PROJECT_DIR$/public/css/search.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/gym/loggedIn/search_box.ejs" afterPath="$PROJECT_DIR$/views/gym/loggedIn/search_box.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/gym/modal/second_register.ejs" afterPath="$PROJECT_DIR$/views/gym/modal/second_register.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/less/spinning.less" afterPath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/less/spinning.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/less/stacked.less" afterPath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/less/stacked.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/suplements.js" afterPath="$PROJECT_DIR$/app/models/suplements.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/tiptip.css" afterPath="$PROJECT_DIR$/public/css/tiptip.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/training.js" afterPath="$PROJECT_DIR$/app/models/training.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routeControllers/trainings.js" afterPath="$PROJECT_DIR$/app/routeControllers/trainings.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.js" afterPath="$PROJECT_DIR$/app/models/user.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/less/variables.less" afterPath="$PROJECT_DIR$/public/css/fonts/font-awesome-4.2.0/less/variables.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="new.prsnly.admin.iws" />
@@ -35,53 +425,83 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29672897">
-              <caret line="881" column="34" selection-start-line="881" selection-start-column="34" selection-end-line="881" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="427" column="33" selection-start-line="427" selection-start-column="33" selection-end-line="427" selection-end-column="33" />
               <folding>
-                <marker date="1443207172484" expanded="true" signature="14245:14255" placeholder="..." />
-                <marker date="1443207172484" expanded="true" signature="14663:14673" placeholder="..." />
-                <marker date="1443207172484" expanded="true" signature="15138:15148" placeholder="..." />
-                <marker date="1443207172484" expanded="true" signature="15597:15607" placeholder="..." />
-                <marker date="1443207172484" expanded="true" signature="24238:24255" placeholder="..." />
-                <marker date="1443207172484" expanded="true" signature="24322:24348" placeholder="..." />
-                <marker date="1443207172484" expanded="true" signature="28506:28542" placeholder="..." />
-                <marker date="1443207172484" expanded="true" signature="28978:29014" placeholder="..." />
-                <marker date="1443207172484" expanded="true" signature="29517:29532" placeholder="..." />
-                <marker date="1443207172484" expanded="true" signature="30015:30030" placeholder="..." />
-                <marker date="1443207172484" expanded="true" signature="31717:31753" placeholder="..." />
+                <marker date="1446020294277" expanded="true" signature="14460:14470" placeholder="..." />
+                <marker date="1446020294277" expanded="true" signature="14878:14888" placeholder="..." />
+                <marker date="1446020294277" expanded="true" signature="15353:15363" placeholder="..." />
+                <marker date="1446020294277" expanded="true" signature="15812:15822" placeholder="..." />
+                <marker date="1446020294277" expanded="true" signature="24557:24574" placeholder="..." />
+                <marker date="1446020294277" expanded="true" signature="24641:24667" placeholder="..." />
+                <marker date="1446020294277" expanded="true" signature="28875:28911" placeholder="..." />
+                <marker date="1446020294277" expanded="true" signature="29347:29383" placeholder="..." />
+                <marker date="1446020294277" expanded="true" signature="29886:29901" placeholder="..." />
+                <marker date="1446020294277" expanded="true" signature="30384:30399" placeholder="..." />
+                <marker date="1446020294277" expanded="true" signature="32056:32092" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kickstart.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/kickstart.js">
+      <file leaf-file-name="exercise.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/exercise/exercise.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/gym/index.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+              <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="exerciseResult.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/result/exerciseResult.js">
+        <entry file="file://$PROJECT_DIR$/app/models/exercise/exerciseResult.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+              <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="exerciseTemplate.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/exercise/exerciseTemplate.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/routes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6783555">
+              <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="box.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/routeControllers/box.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.236842">
+              <caret line="31" column="47" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/routeControllers/profile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
               <folding>
                 <element signature="e#0#39#0" expanded="false" />
               </folding>
@@ -99,53 +519,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/routeControllers/admin.js">
+      <file leaf-file-name="main.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/gym/main.ejs">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="59" column="61" selection-start-line="59" selection-start-column="55" selection-end-line="59" selection-end-column="61" />
-              <folding>
-                <element signature="e#0#38#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="exercise.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/exercise/exercise.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
+              <caret line="80" column="28" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="box.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/routeControllers/box.js">
+      <file leaf-file-name="modalEffects.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/modalEffects.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="32" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="training.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/training.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/user.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="44" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="44" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -167,16 +555,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/models/clothes.js" />
-        <option value="$PROJECT_DIR$/app/models/suplements.js" />
         <option value="$PROJECT_DIR$/app/models/location.js" />
         <option value="$PROJECT_DIR$/public/js/kickstart.js" />
         <option value="$PROJECT_DIR$/app/models/benchmarkWorkouts.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/views/gym/main.ejs" />
         <option value="$PROJECT_DIR$/app/middleware/adminMiddleware.css" />
         <option value="$PROJECT_DIR$/app/middleware/adminMiddleware.js" />
-        <option value="$PROJECT_DIR$/views/gym/modal/second_register.ejs" />
         <option value="$PROJECT_DIR$/app/routeControllers/admin.js (old)" />
         <option value="$PROJECT_DIR$/app/middleware/loginMiddleware.js" />
         <option value="$PROJECT_DIR$/app/middleware/ownerMiddleware.js" />
@@ -186,8 +570,6 @@
         <option value="$PROJECT_DIR$/views/gym/loggedIn/partials/header.ejs" />
         <option value="$PROJECT_DIR$/app/models/boxfit.js" />
         <option value="$PROJECT_DIR$/views/gym/loggedIn/search_box.ejs" />
-        <option value="$PROJECT_DIR$/app/routeControllers/login.js" />
-        <option value="$PROJECT_DIR$/views/gym/admin/main.ejs" />
         <option value="$PROJECT_DIR$/views/gym/loggedIn/create_box.ejs" />
         <option value="$PROJECT_DIR$/app/middleware/boxSelectedMiddleware.js" />
         <option value="$PROJECT_DIR$/app/utils/formValidator.js" />
@@ -205,19 +587,25 @@
         <option value="$PROJECT_DIR$/app/models/exercise/exerciseResult.js" />
         <option value="$PROJECT_DIR$/app/models/exercise/exerciseCreated.js" />
         <option value="$PROJECT_DIR$/app/models/aboutCrossfit.js" />
-        <option value="$PROJECT_DIR$/app/routes.js" />
         <option value="$PROJECT_DIR$/app/models/set.js" />
         <option value="$PROJECT_DIR$/views/gym/head.ejs" />
-        <option value="$PROJECT_DIR$/views/gym/index.ejs" />
         <option value="$PROJECT_DIR$/public/js/validator.js" />
         <option value="$PROJECT_DIR$/app/models/level.js" />
         <option value="$PROJECT_DIR$/app/models/training.js" />
         <option value="$PROJECT_DIR$/app/models/result/resultTemplate.js" />
         <option value="$PROJECT_DIR$/app/models/exercise/exerciseTemplate.js" />
         <option value="$PROJECT_DIR$/app/models/exercise/exercise.js" />
-        <option value="$PROJECT_DIR$/app/routeControllers/admin.js" />
         <option value="$PROJECT_DIR$/app/routeControllers/trainings.js" />
+        <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/views/gym/modal/second_register.ejs" />
+        <option value="$PROJECT_DIR$/app/routeControllers/login.js" />
+        <option value="$PROJECT_DIR$/views/gym/main.ejs" />
+        <option value="$PROJECT_DIR$/views/gym/index.ejs" />
+        <option value="$PROJECT_DIR$/views/gym/admin/index.ejs" />
+        <option value="$PROJECT_DIR$/views/gym/admin/main.ejs" />
+        <option value="$PROJECT_DIR$/app/routeControllers/admin.js" />
         <option value="$PROJECT_DIR$/public/js/main.js" />
+        <option value="$PROJECT_DIR$/app/routes.js" />
       </list>
     </option>
   </component>
@@ -229,9 +617,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="30" />
-    <option name="width" value="1366" />
-    <option name="height" value="738" />
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="1942" />
+    <option name="height" value="1042" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -256,7 +645,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -311,33 +700,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="loggedIn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="new.prsnly.admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="new.prsnly.admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gym" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="loggedIn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
+              <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -501,11 +864,11 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="C:/Program Files/nodejs/node.exe" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="recentsLimit" value="5" />
@@ -526,7 +889,7 @@
     </key>
   </component>
   <component name="RunManager" selected="Node.js.server.js">
-    <configuration default="false" name="server.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="/usr/bin/node" path-to-js-file="server.js" working-dir="$PROJECT_DIR$">
+    <configuration default="false" name="server.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="server.js" working-dir="$PROJECT_DIR$">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -590,26 +953,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="30" width="1366" height="738" extended-state="0" />
+    <frame x="-11" y="-11" width="1942" height="1042" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34248787" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1703125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24340177" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41518578" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1763754" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20555556" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34248787" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41518578" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32763976" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32763976" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -743,7 +1106,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/public/js/main.js</url>
-          <line>901</line>
+          <line>893</line>
           <option name="timeStamp" value="303" />
         </line-breakpoint>
       </breakpoints>
@@ -752,78 +1115,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/img/header-table.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/gym/admin/main.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/gym/loggedIn/search_box.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/gym/loggedIn/partials/aside.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.625">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/modernizr.custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/gym/loggedIn/create_box.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="63" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/utils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="412" column="0" selection-start-line="412" selection-start-column="0" selection-end-line="412" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/middleware/adminMiddleware.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/database.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -870,20 +1165,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.WebStorm10/system/extLibs/nodejs-v0.12.7-src/core-modules-sources/lib/fs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="289" column="7" selection-start-line="289" selection-start-column="7" selection-end-line="289" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/clothes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -898,24 +1179,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/gym/main.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/gym/loggedIn/partials/header.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/gym/head.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -926,42 +1193,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/modalEffects.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.WebStorm10/system/extLibs/nodejs-v0.12.7-src/core-modules-sources/lib/events.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/box.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routeControllers/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="174" column="87" selection-start-line="174" selection-start-column="85" selection-end-line="174" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routeControllers/profile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1021,25 +1257,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/suplements.js">
+    <entry file="file://$PROJECT_DIR$/app/models/result/exerciseResult.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/exercise/exerciseResult.js">
+    <entry file="file://$PROJECT_DIR$/public/js/kickstart.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/exercise/exerciseTemplate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="15" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="15" />
-          <folding />
+          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -1047,25 +1275,69 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="33" column="44" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/routeControllers/box.js">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="32" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
+          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/result/exerciseResult.js">
+    <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
+          <caret line="33" column="42" selection-start-line="31" selection-start-column="39" selection-end-line="33" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/classie.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/cssParser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/gym/head.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.076923">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/gym/modal/second_register.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.87">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.dropbox">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/gym/loggedIn/search_box.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1073,6 +1345,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/suplements.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routeControllers/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="175" column="75" selection-start-line="175" selection-start-column="75" selection-end-line="175" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/gym/loggedIn/admin_boxes.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -1080,7 +1382,23 @@
     <entry file="file://$PROJECT_DIR$/views/gym/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+          <caret line="12" column="25" selection-start-line="10" selection-start-column="20" selection-end-line="12" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/gym/admin/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/gym/admin/main.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -1088,9 +1406,45 @@
     <entry file="file://$PROJECT_DIR$/app/routeControllers/admin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="61" selection-start-line="59" selection-start-column="55" selection-end-line="59" selection-end-column="61" />
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
           <folding>
             <element signature="e#0#38#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/gym/main.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="80" column="28" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/modalEffects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="427" column="33" selection-start-line="427" selection-start-column="33" selection-end-line="427" selection-end-column="33" />
+          <folding>
+            <marker date="1446020294277" expanded="true" signature="14460:14470" placeholder="..." />
+            <marker date="1446020294277" expanded="true" signature="14878:14888" placeholder="..." />
+            <marker date="1446020294277" expanded="true" signature="15353:15363" placeholder="..." />
+            <marker date="1446020294277" expanded="true" signature="15812:15822" placeholder="..." />
+            <marker date="1446020294277" expanded="true" signature="24557:24574" placeholder="..." />
+            <marker date="1446020294277" expanded="true" signature="24641:24667" placeholder="..." />
+            <marker date="1446020294277" expanded="true" signature="28875:28911" placeholder="..." />
+            <marker date="1446020294277" expanded="true" signature="29347:29383" placeholder="..." />
+            <marker date="1446020294277" expanded="true" signature="29886:29901" placeholder="..." />
+            <marker date="1446020294277" expanded="true" signature="30384:30399" placeholder="..." />
+            <marker date="1446020294277" expanded="true" signature="32056:32092" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1103,11 +1457,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/kickstart.js">
+    <entry file="file://$PROJECT_DIR$/app/models/exercise/exerciseResult.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/exercise/exerciseTemplate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routeControllers/box.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.236842">
+          <caret line="31" column="47" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routeControllers/profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1119,23 +1499,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/main.js">
+    <entry file="file://$PROJECT_DIR$/app/routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29672897">
-          <caret line="881" column="34" selection-start-line="881" selection-start-column="34" selection-end-line="881" selection-end-column="34" />
-          <folding>
-            <marker date="1443207172484" expanded="true" signature="14245:14255" placeholder="..." />
-            <marker date="1443207172484" expanded="true" signature="14663:14673" placeholder="..." />
-            <marker date="1443207172484" expanded="true" signature="15138:15148" placeholder="..." />
-            <marker date="1443207172484" expanded="true" signature="15597:15607" placeholder="..." />
-            <marker date="1443207172484" expanded="true" signature="24238:24255" placeholder="..." />
-            <marker date="1443207172484" expanded="true" signature="24322:24348" placeholder="..." />
-            <marker date="1443207172484" expanded="true" signature="28506:28542" placeholder="..." />
-            <marker date="1443207172484" expanded="true" signature="28978:29014" placeholder="..." />
-            <marker date="1443207172484" expanded="true" signature="29517:29532" placeholder="..." />
-            <marker date="1443207172484" expanded="true" signature="30015:30030" placeholder="..." />
-            <marker date="1443207172484" expanded="true" signature="31717:31753" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="0.6783555">
+          <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>

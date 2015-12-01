@@ -10,7 +10,9 @@
 		</ul>
 	</nav>
 	<div class="col_12" style="margin-top:60px">
-
+		<% if(locals.csrf){%>
+		<input type="hidden" id="csrfToken" name="_csrf" value="<%=csrf%>">
+		<%}%>
 		<div class="col_6">
 			<p>Search user</p>
 			<form id="search_box">
@@ -87,7 +89,7 @@
 			if($('#tags').val().length >= 3){
 
 				var	input_txt = $('#tags').val();
-				var data = {'query':input_txt};
+				var data = {'query':input_txt,'_csrf':	$("#csrfToken").val()};
 
 				$.ajax({
 					url: "/admin/searchUser",
@@ -139,7 +141,7 @@ $('#tags2').on('input', function() {
 	if($('#tags2').val().length >= 3){
 
 		var	input_txt = $('#tags2').val();
-		var data = {'query':input_txt};
+		var data = {'query':input_txt,'_csrf':	$("#csrfToken").val()};
 
 		$.ajax({
 			url: "/admin/searchBox",
@@ -187,7 +189,7 @@ $('#tags2').on('input', function() {
 
 //Box
 $('#search_b').on('click', function() {
-	var data = {'query':label};
+	var data = {'query':label,'_csrf':	$("#csrfToken").val()};
 	
 	$.ajax({
 		url: "/admin/searchBox",
@@ -217,7 +219,7 @@ $('#search_b').on('click', function() {
 
 
 $('#search_box #search_user').on('click', function() {
-	var data = {'email':email};
+	var data = {'email':email,'_csrf':	$("#csrfToken").val()};
 
 	$.ajax({
 		url: "/admin/search/email",
@@ -256,7 +258,7 @@ $('#search_box #search_user').on('click', function() {
 
 
 $('#search_box #search_user').on('click', function() {
-	var data = {'email':email};
+	var data = {'email':email,'_csrf':	$("#csrfToken").val()};
 
 	$.ajax({
 		url: "/admin/search/email",
@@ -309,7 +311,7 @@ $("#isAdmin").on("click", function(){
 		$('.content').text("NO");
 	}
 
-	var data = {'isOwner':isOwner, 'email':email};
+	var data = {'isOwner':isOwner, 'email':email,'_csrf':	$("#csrfToken").val()};
 
 	$.ajax({
 		url: "/admin/addPrivileges",
@@ -327,7 +329,7 @@ $(".result_search_user button").on("click",function(){
 
 	var maxBox_value = $('.result_search_user #maxBox').val();
 	email = $('.result_search_user #email').text();
-	var data = {'maxBox':maxBox_value, 'email':email};
+	var data = {'maxBox':maxBox_value, 'email':email,'_csrf':	$("#csrfToken").val()};
 
 	$.ajax({
 		url: "/admin/AddNumberOfBox",
@@ -346,7 +348,7 @@ $(".result_search button").on("click",function(){
 
 	var boxname_value = $('#result_box_val').val();
 	
-	var data = {'boxName': old_label,'newName':boxname_value};
+	var data = {'boxName': old_label,'newName':boxname_value,'_csrf':	$("#csrfToken").val()};
 
 	$.ajax({
 		url: "/admin/changeBoxName",
@@ -369,7 +371,7 @@ $('.train_list button').on("click",function(){
 	var get_measure = $('#measure_training').val();
 	var get_others = $('#others_training').val();
 
-	var data = {'name':get_name,'measure':get_measure,'others':get_others};
+	var data = {'name':get_name,'measure':get_measure,'others':get_others,'_csrf':	$("#csrfToken").val()};
 
 	$.ajax({
 		url: "/admin/addExercise",

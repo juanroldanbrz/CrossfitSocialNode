@@ -14,7 +14,7 @@ module.exports = function(app) {
         if(req.session.adminLogged!=null && req.session.adminLogged ==true)
             res.redirect('/admin/main');
         else
-            res.render('gym/admin/index');
+            res.render('gym/admin/index',{csrf: req.csrfToken()});
     });
     app.post('/admin', function (req, res) {
         if(req.body.username != '' && req.body.username != null && req.body.password != '' &&  req.body.password != null) {
@@ -22,13 +22,13 @@ module.exports = function(app) {
                 if( bcrypt.compareSync(req.body.password, config.admin.pass)) {
                     req.session.adminLogged = true;
                     req.session.save();
-                    res.render('gym/admin/main');
+                    res.render('gym/admin/main',{csrf: req.csrfToken()});
                 }
         }else res.redirect('/admin');
     });
 
     app.get('/admin/main',middleware.isAdminLogged,function (req, res) {
-        res.render('gym/admin/main');
+        res.render('gym/admin/main',{csrf: req.csrfToken()});
     });
 
 

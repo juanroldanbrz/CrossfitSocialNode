@@ -16,7 +16,7 @@ var port     = 8000;
 var mongoose = require('mongoose');
 var passport = require('passport');
 var flash    = require('connect-flash');
-
+var csrf = require('csurf');
 var configDB = require('./config/database.js');
 
 // configuration ===============================================================
@@ -35,11 +35,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(multer());
 
 app.use(cookieParser()); // read cookies (needed for auth)
-
 // required for passport
 app.use(passport.initialize());
 app.use(passport.session()); // persistent login sessions
 app.use(flash()); // use connect-flash for flash messages stored in session
+app.use(csrf());
 
 // routes ======================================================================
 require('./app/routes.js')(app, passport); // load our routes and pass in our app and fully configured passport

@@ -62,6 +62,13 @@
 
 			<%- include loggedIn/create_box.ejs %>
 
+			<!-- TOKEN -->
+
+			<% if(locals.csrf){%>
+			<input type="hidden" id="csrfToken" name="_csrf" value="<%=csrf%>">
+			<%}%>
+
+
 
 
 

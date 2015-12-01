@@ -8,6 +8,9 @@
 			<h3>Login</h3>
 			<div>
 				<form id="login" action="/login" method="POST" onsubmit="return validateLoginForm()">
+					<% if(locals.csrf){%>
+					<input type="hidden" name="_csrf" value="<%=csrf%>">
+					<%}%>
 					<input type="text" placeholder="Username or email" name="username" style="width:100%"/>
 					<input type="password" placeholder="Password" name="password" style="width:100%;"/>
 					<a href="#" class="md-trigger md-close" data-modal="modal-6">Forgot your password? <span style="color:#EC1717">Click here!</span></a>
@@ -51,7 +54,13 @@
 			<div>
 				<form id="register" action="/signup" method="POST" >
 
+
+
 					<input type="text" name="username" placeholder="Username" style="width:50%;">
+					<% if(locals.csrf){%>
+					<input type="hidden" name="_csrf" value="<%=csrf%>">
+					<%}%>
+
 					<input type="password" name="password" placeholder="Password" style="width:50%;">
 					<input type="password" name="password2" placeholder="Repeat password" style="width:50%;">
 					<input class="md-close" type="submit" value="REGISTER">

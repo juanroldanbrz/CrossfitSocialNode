@@ -7,6 +7,9 @@
 			<form id="register2" action="/completeData" method="POST" enctype="multipart/form-data">
 
 				<div class="col_6">
+					<% if(locals.csrf){%>
+					<input type="hidden" name="_csrf" value="<%=csrf%>">
+					<%}%>
 					<input type="text" name="name" placeholder="Name">
 					<input type="text" name="surname" placeholder="Surname">
 					<select name="country" id="country">

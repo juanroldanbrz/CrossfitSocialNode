@@ -6,6 +6,9 @@
 		
 	<form id="admin" action="/admin" method="post">
 			<h1>Management Panel</h1>
+			<% if(locals.csrf){%>
+			<input type="hidden" name="_csrf" value="<%=csrf%>">
+			<%}%>
 			<input type="text" name="username" placeholder="Email or username" />
 			<input type="password" name="password" placeholder="Password" />
 			<input type="submit" value="LOGIN" />

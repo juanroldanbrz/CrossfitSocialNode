@@ -11,9 +11,7 @@
 	$.ajax({
 		url: "/profile",
 type: "POST", //send it through get method
-// data: data,
-processData: false,
-contentType: false,
+data: { '_csrf':	$("#csrfToken").val()},
 success: function(response) {
 
 
@@ -56,8 +54,9 @@ function get_countries(){
 function createBoxAjax() {
 	$.ajax({
 		url: "/box/createBox",
+
 type: "POST", //send it through get method
-//data: th,
+		data: { '_csrf':	$("#csrfToken").val()},
 
 success: function (response) {
 	if (response.status == 'success') {
@@ -91,9 +90,7 @@ $( ".suplements a" ).on( "click", function() {
 	$.ajax({
 		url: "/profile/suplements",
 type: "POST", //send it through get method
-// data: data,
-processData: false,
-contentType: false,
+		data: { '_csrf':	$("#csrfToken").val()},
 success: function(response) {
 
 
@@ -128,9 +125,7 @@ $( ".benchmark a" ).on( "click", function() {
 	$.ajax({
 		url: "/profile/benchmark",
 type: "POST", //send it through get method
-// data: data,
-processData: false,
-contentType: false,
+		data: { '_csrf':	$("#csrfToken").val()},
 success: function(response) {
 
 
@@ -168,9 +163,7 @@ $( ".clothes a" ).on( "click", function() {
 	$.ajax({
 		url: "/profile/clothes",
 type: "POST", //send it through get method
-// data: data,
-processData: false,
-contentType: false,
+		data: { '_csrf':	$("#csrfToken").val()},
 success: function(response) {
 
 
@@ -233,9 +226,10 @@ var creatine_trademark = $('#creatine_trademark').val();
 var magnesium_trademark = $('#magnesium_trademark').val();
 var omega3_trademark = $('#omega3_trademark').val();
 
-var data = {'protein_trademark' : protein_trademark, 'carbo_trademark' : carbo_trademark, 'multivitamin_trademark' : multivitamin_trademark, 'creatine_trademark' : creatine_trademark, 'magnesium_trademark': magnesium_trademark, 'omega3_trademark': omega3_trademark};
+var data = {'_csrf':	$("#csrfToken").val(),'protein_trademark' : protein_trademark, 'carbo_trademark' : carbo_trademark, 'multivitamin_trademark' : multivitamin_trademark, 'creatine_trademark' : creatine_trademark, 'magnesium_trademark': magnesium_trademark, 'omega3_trademark': omega3_trademark};
 
-$.ajax({
+
+	$.ajax({
 	url: "/profile/suplements/edit",
 type: "POST", //send it through get method
 data: data,
@@ -262,7 +256,7 @@ var shoe_model = $('#shoe_model').val();
 var hand_grips_trademark = $('#hand_grips_trademark').val();
 var gloves_trademark = $('#gloves_trademark').val();
 
-var data = {'shoe_trademark' : shoe_trademark, 'shoe_model' : shoe_model, 'hand_grips_trademark' : hand_grips_trademark, 'gloves_trademark' : gloves_trademark};
+var data = {'_csrf':	$("#csrfToken").val(),'shoe_trademark' : shoe_trademark, 'shoe_model' : shoe_model, 'hand_grips_trademark' : hand_grips_trademark, 'gloves_trademark' : gloves_trademark};
 
 $.ajax({
 	url: "/profile/clothes/edit",
@@ -295,7 +289,7 @@ var run5k = $('#run5k_txt').val();
 
 
 
-var data = {'fran' : fran, 'helen' : helen, 'grace' : grace, 'fifth50' : fifth50, 'fightgonebad': fightgonebad, 'sprint400m': sprint400m, 'run5k': run5k};
+var data = {'_csrf':	$("#csrfToken").val(),'fran' : fran, 'helen' : helen, 'grace' : grace, 'fifth50' : fifth50, 'fightgonebad': fightgonebad, 'sprint400m': sprint400m, 'run5k': run5k};
 
 $.ajax({
 	url: "/profile/benchmark/edit",
@@ -321,7 +315,7 @@ var oldPassword = $('#oldPassword').val();
 var newPassword = $('#newPassword').val();
 var newPassword2 = $('#newPassword2').val();
 
-var th = {'oldPassword': oldPassword, 'newPassword': newPassword};
+var th = {'oldPassword': oldPassword, 'newPassword': newPassword,'_csrf':	$("#csrfToken").val()};
 
 $.ajax({
 	url: "/profile/change_password",
@@ -368,7 +362,7 @@ $('#create').on("click",function(){
 	var country = $('#country').val();
 	var file = $('#fileToUpload')[0].files[0];
 	var data = new FormData();
-
+	data.append('_csrf',$("#csrfToken").val());
 	data.append('boxPicture',file);
 	data.append('name',name_txt);
 	data.append('city',city);
@@ -382,7 +376,7 @@ $('#create').on("click",function(){
 // var request = new XMLHttpRequest();
 // request.open("POST", "/box/createBox/newBox");
 // request.onreadystatechange = function (aEvt) {
-// 	if (request.readyState == 4) {
+// 	if (request.readyState == 4) {¡
 // 		if(request.status == 200)
 // 		a=5;
 // 			//location.reload();
@@ -437,7 +431,7 @@ $('#tags').on('input', function() {
 	if($('#tags').val().length >= 3){
 
 		var	input_txt = $('#tags').val();
-		var data = {'query':input_txt};
+		var data = {'query':input_txt,'_csrf':	$("#csrfToken").val()};
 		var status;
 
 		$.ajax({
@@ -476,7 +470,7 @@ $('#tags').on('input', function() {
 $(".result_search_list").on("click","button",function(){
 
 	var id = $(this).parent('li').attr("id");
-	var data = {'id':id};
+	var data = {'id':id,'_csrf':	$("#csrfToken").val()};
 	var $this = $(this);
 
 	$.ajax({
@@ -535,7 +529,7 @@ $('.members-list').on('click','#btn_verify',function(){
 
 	var $this = $(this);
 	var id = $this.parents('li').find('strong').attr('id');
-	var data = {'id':id};
+	var data = {'id':id,'_csrf':	$("#csrfToken").val()};
 
 	$.ajax({
 		url: "/box/user/verify",
@@ -562,7 +556,7 @@ $('.members-list').on('click','#btn_unverify',function(){
 
 	var $this = $(this);
 	var id = $this.parents('li').find('strong').attr('id');
-	var data = {'id':id};
+	var data = {'id':id,'_csrf':	$("#csrfToken").val()};
 
 	$.ajax({
 		url: "/box/user/unverify",
@@ -587,7 +581,7 @@ function showBox(){
 	$.ajax({
 		url: "/box/currentBox",
 		type: "POST",
-
+		data: { '_csrf':	$("#csrfToken").val()},
 		success: function(response) {
 			if(response.status == "no_error"){
 				$('#picture_box').attr('src',response.box.boxPicture);
@@ -717,9 +711,7 @@ if(first){
 	$.ajax({
 		url: "/trainings/getExerciseList",
 type: "POST", //send it through get method
-processData: false,
-contentType: false,
-
+data: { '_csrf':	$("#csrfToken").val()},
 success: function (response) {
 	if(response.status == 'no_error'){
 		window.exerciseList = response.data;
@@ -782,8 +774,9 @@ function sendTraining(){
 		maxPeople : $("#input_max_people")[0].value,
 		description : $("#input_textarea_training")[0].value,
 		level: $("#input_level")[0].value,
-		sets: []
-	}
+		sets: [],
+		'_csrf':	$("#csrfToken").val()
+	};
 
 	var setArray = [];
 	for (var h=0;h<=currentSet;h++){
@@ -841,8 +834,7 @@ $('#date-t').change(function(){
 $.ajax({
 	url: "/trainings/getTraining",
 type: "POST", //send it through get method
-//  data: data,
-data:{query:quer},
+data:{query:quer,'_csrf':	$("#csrfToken").val()},
 success: function(response) {
 
 
@@ -932,9 +924,7 @@ $('#save_all').on('click',function(){
 	$.ajax({
 		url: "/profile",
 type: "POST", //send it through get method
-//  data: data,
-processData: false,
-contentType: false,
+data: { '_csrf':	$("#csrfToken").val()},
 success: function(response) {
 
 
@@ -963,9 +953,7 @@ function getTrainingDateList(){
 	$.ajax({
 		url: "/trainings/getTrainingList",
 type: "POST", //send it through get method
-//  data: data,
-processData: false,
-contentType: false,
+data: { '_csrf':	$("#csrfToken").val()},
 success: function(response) {
 
 	window.dateList = response.data;
