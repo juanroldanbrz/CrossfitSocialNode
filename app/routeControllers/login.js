@@ -26,10 +26,13 @@ module.exports = function(app, passport) {
     });
 
     app.post('/login', passport.authenticate('local-login', {
-        successRedirect : '/', // redirect to the secure profile section
+        //successRedirect : '/main', // redirect to the secure profile section
         failureRedirect : '/login', // redirect back to the signup page if there is an error
         failureFlash : true // allow flash messages
-    }));
+    }),function(req,res){
+        if(req.user.registerCompleted)res.redirect('/main');
+        else res.redirect('/completedata');
+    });
 
     app.post('/remember_me',function(req,res){
         if(req.body.username == null || req.body.username == '' )
@@ -149,7 +152,7 @@ module.exports = function(app, passport) {
     });
 
     app.get('/completeData',middleware.isLoggedIn, function(req, res){
-        res.render('gym/index',{completeRegister: true});
+        res.render('gym/index',{completeRegister: true,csrf: req.csrfToken()});
                 //name, surname, avatar, email,country,phone
     });
 
@@ -157,10 +160,12 @@ module.exports = function(app, passport) {
 
     app.get('/login', function(req, res){
         error = req.flash('loginMessage')[0];
-        if(error==null)
-            res.render('gym/index',{error: 'Please fill all the data.'});
-        else
-            res.render('gym/index',{error: error});
+        if(error==null) {
+            res.render('gym/index', {error: 'Please fill all the data.', csrf: req.csrfToken()});
+        }
+        else {
+            res.render('gym/index', {error: error, csrf: req.csrfToken()});
+        }
     });
 
     app.get('/signup', function(req, res){
@@ -172,7 +177,7 @@ module.exports = function(app, passport) {
     });
 
     app.post('/signup', passport.authenticate('local-signup', {
-        successRedirect : '/', // redirect to the secure profile section
+        successRedirect : '/completedata', // redirect to the secure profile section
         failureRedirect : '/signup', // redirect back to the signup page if there is an error
         failureFlash : true // allow flash messages
     }));
