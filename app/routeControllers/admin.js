@@ -1,6 +1,3 @@
-/**
- * Created by root on 1/09/15.
- */
 var bcrypt   = require('bcrypt-nodejs');
 var config = require('../../config/config');
 var middleware = require('../middleware/adminMiddleware.js')

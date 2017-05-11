@@ -1,6 +1,3 @@
-/**
- * Created by root on 2/09/15.
- */
 module.exports = {
     isOwnerLogged:function(req, res, next){
         if(!req.isAuthenticated())
@@ -11,4 +8,4 @@ module.exports = {
             return next();
 
     }
-}
+};

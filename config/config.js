@@ -1,6 +1,3 @@
-/**
- * Created by root on 25/08/15.
- */
 var config = {
     twitter: {
         key: 'KLoTpEYM0f05QbwPpn0WT8skF',

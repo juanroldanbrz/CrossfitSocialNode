@@ -1,6 +1,3 @@
-/**
- * Created by root on 7/09/15.
- */
 var boxMiddleware = require('../middleware/boxMiddleware.js');
 var ownerMiddleware = require('../middleware/ownerMiddleware.js');
 var Box = require('../models/box');
@@ -12,12 +9,6 @@ var Set = require('../models/set');
 var ExerciseTemplate = require('../models/exercise/exerciseTemplate');
 
 module.exports = function(app) {
-
-    //Get profile info (basic info from the session)
-    app.post('/trainings/newTraining', ownerMiddleware.isOwnerLogged, function (req, res) {
-
-
-    });
 
     app.post('/trainings/getExerciseList', ownerMiddleware.isOwnerLogged, function (req, res) {
         ExerciseTemplate.find({}, function (err, exerciseList) {
@@ -31,8 +22,6 @@ module.exports = function(app) {
                 result.push({id:exerciseList[i]._id,exerciseName:exerciseList[i].exerciseName, measure : exerciseList[i].measure, others: exerciseList[i].others, canBePosted : exerciseList[i].canBePosted });
             res.send({status:'no_error',data:result});
         })
-
-
     });
 
     app.post('/trainings/getTrainingList', boxMiddleware.isFollowingABox, function (req, res) {
@@ -44,18 +33,9 @@ module.exports = function(app) {
                 for (var i = 0; i < trainings.length; i++)
                 ret.push({name:trainings[i].name,date:trainings[i].date,id:trainings[i]._id});
                 res.send({status:'no_error',data:ret});
-
             }
             else res.send({status: 'error'});
-
-
             });
-
-
-    });
-
-    app.post('/trainings/getLevelInfo', ownerMiddleware.isOwnerLogged, function (req, res) {
-
     });
 
     app.post('/trainings/getTraining', ownerMiddleware.isOwnerLogged, function (req, res) {
@@ -63,7 +43,7 @@ module.exports = function(app) {
             Training.findById(req.body.query,function(err,training){
                 if(err)
                 res.send({status:"error"});
-                else if(training!=null){
+                else if(training!==null){
                     var send = {
                         name:training.name,
                         date:training.date,
@@ -71,7 +51,7 @@ module.exports = function(app) {
                         description : training.description,
                         level: training.level,
                         sets:[]
-                    }
+                    };
                     for(var i=0;i<training.sets.length;i++){
                         Set.findById(training.sets[i],function(err,set){
                             if(err)
@@ -95,26 +75,19 @@ module.exports = function(app) {
                                     }
 
                                 }.bind({j:j,i: this.i}))
-
-                            }
-
-                            }
-
+                            }}
                         }.bind( {i: i} ));
-
                     }
-
                     }});
         }
-
     });
 
     app.post('/trainings/getTrainingToPost', ownerMiddleware.isOwnerLogged, function (req, res) {
         if(formValidator.isAValidInput(req,['query'])) {
-            Training.findById(req.body.query,function(err,training){
+            Training.findById(req.body.query,function(err, training){
                 if(err)
                     res.send({status:"error"});
-                else if(training!=null){
+                else if(training!==null){
                     var send = {
                         sets:[]
                     }
@@ -123,7 +96,12 @@ module.exports = function(app) {
                             if(err)
                                 res.send({status:'error'})
                             else if(set){
-                                send.sets[this.i] = {name:set.name,type:set.type,info:set.info,time:set.time,repetitions:set.repetitions,exercises:[]};
+                                send.sets[this.i] = {
+                                    name:set.name,type:set.type,
+                                    info:set.info,time:set.time,
+                                    repetitions:set.repetitions,exercises:[]
+                                };
+
                                 for (var j=0;j<set.exercises.length;j++){
                                     Exercise.findById(set.exercises[j], function (err,exercise) {
                                         if(err)
@@ -137,25 +115,19 @@ module.exports = function(app) {
                                             if(this.i==training.sets.length-1 && this.j == set.exercises.length-1)
                                                 res.send({status:"no_error",data:send});
                                         }
-
                                     }.bind({j:j,i: this.i}))
-
                                 }
-
                             }
 
                         }.bind( {i: i} ));
-
                     }
-
                 }});
         }
-
     });
 
     app.post('/trainings/addTraining', ownerMiddleware.isOwnerLogged, function (req, res) {
         if(formValidator.isAValidInput(req,['date','sets','maxPeople','level','description'])) {
-            if(req.body.sets.length!=0){
+            if(req.body.sets.length!==0){
 
                 var newTraining = new Training();
                 newTraining.date = req.body.date;
@@ -211,20 +183,14 @@ module.exports = function(app) {
                     set[i].save(function(err){
                         if(err)
                             throw err;
-
                     });
-
                     }
-
-
                 newTraining.save(function(err){
                     if(err)
                     res.send({status:'error'});
                     else
                     res.send({status:'no_error'})
                 });
-
-
                 }
         }
     });
@@ -238,12 +204,9 @@ module.exports = function(app) {
                     res.send({status:'error'});
                 else{
                     Training.remove({$and : [{_id:req.body.traningId},{box:req.body.boxId}]})
-
                 }
-
             });
         }
-
     });
 
     app.post('/trainings/byBoxId', ownerMiddleware.isOwnerLogged, function (req, res) {
@@ -255,7 +218,6 @@ module.exports = function(app) {
                     res.send({status:'error'});
                 else{
                     Training.remove({$and : [{_id:req.body.traningId},{box:req.body.boxId}]})
-
                 }
 
             });

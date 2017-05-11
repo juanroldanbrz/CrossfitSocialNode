@@ -1,6 +1,3 @@
-/**
- * Created by root on 9/09/15.
- */
 module.exports = {
     getDateDiffInYears: function (date1) {
         //EN FORMATO YYYY-MM-DD
@@ -16,7 +13,6 @@ module.exports = {
 
         return new Date(d2 - d1).getYear() - new Date(0).getYear() + 1;
     }
-
-}
+};
 
 

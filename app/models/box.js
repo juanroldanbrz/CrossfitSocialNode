@@ -1,6 +1,3 @@
-/**
- * Created by root on 25/08/15.
- */
 var mongoose = require('mongoose');
 
 var userOfBox = new mongoose.Schema({
@@ -29,7 +26,7 @@ UserSchema.methods.removeMember = function(uid) {
     var box = this;
     var newMembers = [];
     for(var i=0;i<box.members.length;i++)
-        if (! (box.members[i].user.toHexString() == uid))
+        if (! (box.members[i].user.toHexString() === uid))
             newMembers.push(box.members[i]);
 
     box.members = newMembers;
@@ -60,7 +57,7 @@ UserSchema.methods.verify = function(uid) {
 UserSchema.methods.unVerify = function(uid) {
     var box = this;
     for(var i=0;i<box.members.length;i++)
-        if ((box.members[i].user.toHexString() == uid)){
+        if ((box.members[i].user.toHexString() === uid)){
             box.members[i].isVerified = false;
             break;
         }

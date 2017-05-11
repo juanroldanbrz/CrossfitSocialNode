@@ -1,6 +1,3 @@
-/**
- * Created by root on 27/08/15.
- */
 var csrf = require
 var User = require('../models/user');
 var fs    = require("fs");
@@ -26,7 +23,6 @@ module.exports = function(app, passport) {
     });
 
     app.post('/login', passport.authenticate('local-login', {
-        //successRedirect : '/main', // redirect to the secure profile section
         failureRedirect : '/login', // redirect back to the signup page if there is an error
         failureFlash : true // allow flash messages
     }),function(req,res){
@@ -35,7 +31,7 @@ module.exports = function(app, passport) {
     });
 
     app.post('/remember_me',function(req,res){
-        if(req.body.username == null || req.body.username == '' )
+        if(req.body.username === null || req.body.username == '' )
             res.redirect('/');
 
         else {
@@ -62,7 +58,7 @@ module.exports = function(app, passport) {
                 to: user.email,
                 subject: 'New password of myWebsite',
                 text: 'Your new password is ' + newPass
-            }
+            };
             console.log(mailOptions);
             smtpTransport.sendMail(mailOptions, function (error, response) {
                 if (error) {
@@ -76,7 +72,6 @@ module.exports = function(app, passport) {
         });
         }
     });
-
 
     app.post('/completeData',middleware.isLoggedIn, function(req, res){
             if(formValidator.isAValidInput(req,['birthdate','name','surname','country','phone','email'])){
@@ -111,8 +106,7 @@ module.exports = function(app, passport) {
                             myUser.phone = req.body.phone;
                             myUser.registerCompleted = true;
 
-
-                            if (req.files.profilePic == null) {
+                            if (req.files.profilePic === null) {
                                 myUser.save(function (err) {
                                     if (err)
                                         throw err;
@@ -140,15 +134,12 @@ module.exports = function(app, passport) {
                                 });
 
                             }
-
-
                         }
                     });
                 }
             });
 
         } else res.redirect('/');
-            //name, surname, avatar, email,country,phone
     });
 
     app.get('/completeData',middleware.isLoggedIn, function(req, res){
@@ -156,11 +147,9 @@ module.exports = function(app, passport) {
                 //name, surname, avatar, email,country,phone
     });
 
-
-
     app.get('/login', function(req, res){
         error = req.flash('loginMessage')[0];
-        if(error==null) {
+        if(error===null) {
             res.render('gym/index', {error: 'Please fill all the data.', csrf: req.csrfToken()});
         }
         else {

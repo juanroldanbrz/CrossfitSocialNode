@@ -1,6 +1,3 @@
-/**
- * Created by root on 10/09/15.
- */
 var mongoose = require('mongoose');
 var UserSchema = new mongoose.Schema({
     exerciseName: String,
@@ -13,7 +10,6 @@ var UserSchema = new mongoose.Schema({
     toPost: [ {name: String, measure: String,value: String} ]
 
 });
-
 
 UserSchema.methods.fillFromTemplate = function(template) {
     var exerciseCreated = this;
@@ -33,7 +29,6 @@ UserSchema.methods.fillFromTemplate = function(template) {
             var dataToPush = {name: template.toPost[i].name, measure: template.toPost[i].measure, value: '0'};
             exerciseCreated.others.push(dataToPush);
         }
-
 
     }
 };

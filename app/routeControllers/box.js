@@ -1,6 +1,3 @@
-/**
- * Created by root on 2/09/15.
- */
 var ownerMiddleware = require('../middleware/ownerMiddleware.js');
 var loginMiddleware = require('../middleware/loginMiddleware.js');
 var boxMiddleware = require('../middleware/boxMiddleware.js');
@@ -10,7 +7,7 @@ var User = require('../models/user');
 var Box = require('../models/box');
 var Training = require('../models/training');
 var config = require('../../config/config');
-var fs    = require("fs");
+var fs    = require('fs');
 
 module.exports = function(app) {
     app.post('/box/createBox/newBox', ownerMiddleware.isOwnerLogged, function(req,res){
@@ -40,7 +37,7 @@ module.exports = function(app) {
                         throw err;
                 });
             });
-            if (req.files.boxPicture == null) {
+            if (req.files.boxPicture === null) {
                 newBox.save(function (err) {
                     if (err)
                         throw err;
@@ -65,13 +62,9 @@ module.exports = function(app) {
                     });
                 });
             }
-
-
-
         }
         else res.send({status:'error'});
     });
-
 
     app.post('/box/modifyBox/', ownerMiddleware.isOwnerLogged, function(req,res){
         if(formValidator.isAValidInput(req,['id','country','city','description','tariffs','address'])){
@@ -116,21 +109,10 @@ module.exports = function(app) {
                         });
                     }
                 });}
-
-
-
             });
-
-
-
-
         }
         else res.send({status:'error'});
     });
-
-
-
-
 
     app.post('/box/followAndUnfollowBox', loginMiddleware.isLoggedAndFullRegistered, function(req,res){
         if(formValidator.isAValidInput(req,['id'])) {
@@ -166,7 +148,7 @@ module.exports = function(app) {
 
                 });
             }
-            else if (req.body.id == req.user.currentBox) { //deseguir box
+            else if (req.body.id === req.user.currentBox) { //deseguir box
                 Box.findById(req.user.currentBox, function (err, myBox) {
                     if (err)
                         res.send({status: 'error'});
@@ -248,10 +230,6 @@ module.exports = function(app) {
 
             }
         }});
-
-
-
-
 
     app.post('/box/removeBox', ownerMiddleware.isOwnerLogged, function(req,res){
         if(formValidator.isAValidInput(req,['id'])) {
@@ -342,14 +320,8 @@ module.exports = function(app) {
                 res.send({status:'no_error',box:data});
 
             }
-
-
-
         });
-
     });
-
-
 
     app.post('/box/currentBox/members', boxMiddleware.isFollowingABox, function(req,res){
         Box.findById(req.user.currentBox, function(err, box) {
@@ -358,7 +330,7 @@ module.exports = function(app) {
             else if (!box)
                 res.send({status: 'error'});
 
-            else if (box.members.length == 0)
+            else if (box.members.length === 0)
                 res.send({status: 'error'});
             else{
                 var searchIDS = []
@@ -373,7 +345,7 @@ module.exports = function(app) {
 
                         var data = [];
                         for (var i = 0; i < users.length; i++)
-                            if (box.owner.toHexString() == users[i]._id)
+                            if (box.owner.toHexString() === users[i]._id)
                                 data.unshift({
                                     isOwner: true,
                                     isVerified: box.isVerified(users[i]._id),
@@ -402,18 +374,9 @@ module.exports = function(app) {
 
                     }
                 });
-        }
-
-
-
-
-
-
+            }
         });
-
     });
-
-
 
     app.post('/box/lastBoxes',loginMiddleware.isLoggedAndFullRegistered, function(req,res){
        Box.find({}).sort({createdAt:-1}).limit(config.box.numberOfNewBoxesToShow).exec(function(err,boxes){
@@ -435,13 +398,8 @@ module.exports = function(app) {
                         address:boxes[i].address   });
                     res.send({status:'no_error',data:data});
                 }
-
-
             });
-
     });
-
-
 
     app.post('/box/user/verify',boxMiddleware.isFollowingABox, function(req,res){
         if(formValidator.isAValidInput(req,['id'])){
@@ -463,8 +421,6 @@ module.exports = function(app) {
 
             });
         }
-
-
     });
 
     app.post('/box/user/unVerify',loginMiddleware.isLoggedAndFullRegistered, function(req,res){
@@ -488,12 +444,10 @@ module.exports = function(app) {
                 }
                 else
                     res.send({status:'error'});
-
             });
         }
 
     });
-
 
     app.post('/box/search',loginMiddleware.isLoggedAndFullRegistered, function(req,res){
         if(formValidator.isAValidInput(req,['query'])){
@@ -535,6 +489,5 @@ module.exports = function(app) {
             });
         } else
         res.send({status:'error'});
-
     });
 }

@@ -9,11 +9,6 @@ module.exports = function(app, passport) {
 	require('./routeControllers/box')(app);
 	require('./routeControllers/trainings')(app);
 
-
-
-	// =====================================
-	// HOME PAGE ========
-	// =====================================
 	app.get('/',function(req, res) {
 		if (req.isAuthenticated()){
 			if(!req.user.registerCompleted){
@@ -22,9 +17,6 @@ module.exports = function(app, passport) {
 			else res.redirect('/main');
 
 		}else res.render('gym/index',{csrf: req.csrfToken()});
-			//sessionUsername = req.user.username;
-			//res.render('gym/index', {isLogged: true, username: "JUAN"});
-
 	});
 
 	app.get('/main',middleware.isLoggedAndFullRegistered,function(req, res) {
@@ -34,6 +26,5 @@ module.exports = function(app, passport) {
 	app.post('/getCSRFToken',middleware.isLoggedAndFullRegistered,function(req, res) {
 		res.send({csrf: req.csrfToken() });
 	});
-
 };
 

@@ -1,6 +1,3 @@
-/**
- * Created by root on 31/08/15.
- */
 var middleware = require('../middleware/loginMiddleware.js')
 var Clothes = require('../models/clothes');
 var User = require('../models/user');
@@ -10,9 +7,8 @@ var Suplements = require('../models/suplements');
 
 module.exports = function(app) {
 
-    //Get profile info (basic info from the session)
     app.post('/profile',middleware.isLoggedAndFullRegistered,function(req,res){
-        if(req.user._id != '' && req.user._id != null){
+        if(req.user._id !== '' && req.user._id !== null){
             var userProfile = {
                 status: 'no_error',
                 fullName: req.user.fullName,
@@ -35,7 +31,7 @@ module.exports = function(app) {
             res.send({status:'error'})
 
     });
-    //Modify profile info (basic info from the session)
+
     app.post('/profile/edit',middleware.isLoggedAndFullRegistered,function(req,res){
         if(req.user._id != '' && req.user._id != null){
             User.findById(req.user._id, function (err, user) {
@@ -73,24 +69,21 @@ module.exports = function(app) {
                     });
                 }
                 else
-                { user.save(function(err) {
+                {
+                    user.save(function(err) {
                     if (err)
                         res.send({status:'error'});
                     res.send({status:'no_error'});
 
                 });
                 }
-
-
-
             })
-
         }
-
     });
 
     app.post('/profile/change_password',middleware.isLoggedAndFullRegistered,function(req,res){
-        if(req.user._id != '' && req.user._id != null && req.body.newPassword != ''  && req.body.oldPassword != '' && req.body.newPassword != null  && req.body.oldPassword != null){
+        if(req.user._id != '' && req.user._id != null && req.body.newPassword !== ''
+            && req.body.oldPassword !== '' && req.body.newPassword !== null  && req.body.oldPassword !== null){
             User.findById(req.user._id, function (err, user) {
                 if (err)
                     throw err;
@@ -111,8 +104,8 @@ module.exports = function(app) {
     });
 
 
-    app.post('/profile/clothes',middleware.isLoggedAndFullRegistered,function(req,res){
-        if(req.user._id != '' && req.user._id != null){
+    app.post('/profile/clothes',middleware.isLoggedAndFullRegistered,function(req, res){
+        if(req.user._id !== '' && req.user._id !== null){
             Clothes.findOne({uid: req.user._id}, function(err, clothes) {
                 if (err)
                     throw err;
@@ -135,7 +128,7 @@ module.exports = function(app) {
 
     });
     app.post('/profile/clothes/edit',middleware.isLoggedAndFullRegistered,function(req,res){
-        if(req.user._id != '' && req.user._id != null){
+        if(req.user._id !== '' && req.user._id !== null){
             Clothes.findOne({uid: req.user._id}, function(err, clothes) {
                 if (err)
                     throw err;
@@ -154,7 +147,7 @@ module.exports = function(app) {
         }});
 
     app.post('/profile/suplements',middleware.isLoggedAndFullRegistered,function(req,res){
-        if(req.user._id != '' && req.user._id != null){
+        if(req.user._id !== '' && req.user._id !== null){
             Suplements.findOne({uid: req.user._id}, function(err, suplements) {
                 if (err)
                     throw err;
@@ -179,7 +172,7 @@ module.exports = function(app) {
 
     }});
     app.post('/profile/suplements/edit',middleware.isLoggedAndFullRegistered,function(req,res){
-        if(req.user._id != '' && req.user._id != null){
+        if(req.user._id !== '' && req.user._id !== null){
             Suplements.findOne({uid: req.user._id}, function(err, suplements) {
                 if (err)
                     throw err;
@@ -202,7 +195,7 @@ module.exports = function(app) {
         }});
 
     app.post('/profile/benchmark',middleware.isLoggedAndFullRegistered,function(req,res){
-        if(req.user._id != '' && req.user._id != null){
+        if(req.user._id !== '' && req.user._id !== null){
             BenchmarkWorkout.findOne({uid: req.user._id}, function(err, benchmark) {
                 if (err)
                     throw err;
@@ -227,7 +220,7 @@ module.exports = function(app) {
         }});
 
     app.post('/profile/benchmark/edit',middleware.isLoggedAndFullRegistered,function(req,res){
-        if(req.user._id != '' && req.user._id != null){
+        if(req.user._id !== '' && req.user._id !== null){
             BenchmarkWorkout.findOne({uid: req.user._id}, function(err, benchmark) {
                 if (err)
                     throw err;
@@ -244,8 +237,7 @@ module.exports = function(app) {
                     benchmark.run5k= req.body.run5k,
                     benchmark.save();
                 res.send({status:'no_error'});
-
             });
-
-        }});
+        }
+    });
 }

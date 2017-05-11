@@ -1,6 +1,3 @@
-/**
- * Created by root on 24/09/15.
- */
 var mongoose = require('mongoose');
 var UserSchema = new mongoose.Schema({
     exerciseID: mongoose.Schema.Types.ObjectId,

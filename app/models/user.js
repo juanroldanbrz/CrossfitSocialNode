@@ -1,6 +1,3 @@
-/**
- * Created by root on 25/08/15.
- */
 var bcrypt   = require('bcrypt-nodejs');
 var mongoose = require('mongoose');
 var UserSchema = new mongoose.Schema({
@@ -37,15 +34,11 @@ var UserSchema = new mongoose.Schema({
     about_crossfit : mongoose.Schema.Types.ObjectId, //Reference to AboutCrossfit._id
     benchmarks_workouts : mongoose.Schema.Types.ObjectId, //Reference to BenchmarkWorkouts._id
     benchmarks_maxes : mongoose.Schema.Types.ObjectId //Reference to BenchmarkMaxes._id
-
-
-
 });
 
 UserSchema.methods.getFlag = function(country) {
     return 'flag';
 };
-
 
 UserSchema.pre('save', function(callback) {
     var user = this;
@@ -64,7 +57,6 @@ UserSchema.methods.validPassword = function(password) {
     return bcrypt.compareSync(password, this.password);
 };
 
-
 UserSchema.methods.getAge = function() {
     var user = this;
     var cDate= new Date();
@@ -81,6 +73,5 @@ UserSchema.methods.getAge = function() {
     return new Date(d2 - d1).getYear() - new Date(0).getYear() ;
 
 };
-
 
 module.exports = mongoose.model('User', UserSchema);

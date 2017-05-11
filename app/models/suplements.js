@@ -1,6 +1,3 @@
-/**
- * Created by root on 25/08/15.
- */
 var mongoose = require('mongoose');
 var UserSchema = new mongoose.Schema({
     protein_trademark : String,
